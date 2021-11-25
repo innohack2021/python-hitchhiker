@@ -11,13 +11,14 @@
 
 ### ■ 팀원 구성
 
-| 인트라 아이디 |  Name  | Tags | 담당 개발 | email | github ID |
+| 인트라 아이디 | Name | Tags | 담당 개발 | email | github ID |
 | --- | --- | --- | --- | --- | --- |
 | sokim | 김소연 | 프론트엔드, 오거나이저 | mock-up / 로그인 | 42.4.sokim@gmail.com | SOYKIM |
 | jasong | 송재룡 | 프론트엔드, 리드 | mock-up / 예제코드 뷰 | jasong@sutdent.42seoul.kr | ft-jasong |
-| sunghwki | 김성환 | python 예제 | 프론트엔드 / python 예제 개발 | sunghwki@studet.42seoul.kr | swkim12345 |
-| jeonghwl | 이정환 | 백엔드 / 리드 | 백엔드 개선 참여 | jeonghwanlee15@gmail.com | toy-k |
-| sikang | 강시온 | 백엔드 / 풀스택 | express.js + SQLite + passport.js 기반 백엔드 개발 | 
+| sunghwki | 김성환 | python 예제 | 프론트엔드 / python 예제 개발 | python 예제 30개 정리 | sunghwki@studet.42seoul.kr | swkim12345 |
+| jeonghwl | 이정환 | 백엔드 / 리드 | squelize을 사용한 세선 관리 | jeonghwanlee15@gamil.com | toy-k |
+| sikang | 강시온 | 백엔드 / 풀스택 | express.js + SQLite + passport.js 기반 백엔드 개발 | siontama@gmail.com | siontama@gmail.com |
+| jubae | 배주진 | 백엔드 | 백엔드 개선, 프론트엔드 기능 추가| jubae@student.42seoul.kr | jujinesy@gmail.com |
 
 ### ■ 아이템 개요
 
@@ -75,4 +76,3 @@
 ### ■ 기대 효과 및 전망
 
 - 타겟팅하는 20, 30대 유저층에게 Python으로 하는 코딩의 즐거움을 환경 설정 없이 웹 상에서 쉽게 알려줄 수 있음
--
