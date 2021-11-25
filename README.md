@@ -11,7 +11,7 @@
 
 ### ■ 팀원 구성
 
-| 인트라 아이디 | Name | Tags | 담당 개발 | email | github ID |
+| 인트라 아이디 |  Name  | Tags | 담당 개발 | email | github ID |
 | --- | --- | --- | --- | --- | --- |
 | sokim | 김소연 | 프론트엔드, 오거나이저 | mock-up / 로그인 | 42.4.sokim@gmail.com | SOYKIM |
 | jasong | 송재룡 | 프론트엔드, 리드 | mock-up / 예제코드 뷰 | jasong@sutdent.42seoul.kr | ft-jasong |
