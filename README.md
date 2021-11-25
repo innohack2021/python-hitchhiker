@@ -54,6 +54,7 @@
         - plain md을 파싱해 설명, 코드를 양 쪽에 표시함
         - codemirror을 사용해 코드를 화면에 표시하고, backend.AI를 사용해 python 코드를 웹상에서 작동하고, 결과를 웹에서 볼 수 있음.
         - 추가로 codemirror을 사용해 사용자가 원하는 코드를 타이핑할 수 있음.
+        - 
 
     - 백엔드
         - node.js 기반 express.js 프레임워크를 사용하고, sqlite를 데이터베이스로 사용함.
