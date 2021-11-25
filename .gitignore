@@ -1,0 +1,8 @@
+.DS_Store
+*Zone.Identifier
+.vscode
+node_modules
+build
+npm-debug.log
+.env
+.db

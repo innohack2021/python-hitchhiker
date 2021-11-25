@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>The Hitchhiker's Guide to Python</title>
+    <link rel="stylesheet" href="public/src/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" href="public/src/codemirror/theme/xq-light.css">
+    <link rel="stylesheet" href="public/src/css/index.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/src/css/sunghwki.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="public/src/codemirror/lib/codemirror.js "></script>
+    <script src="public/src/codemirror/addon/comment/comment.js"></script>
+    <script src="public/src/codemirror/addon/selection/active-line.js"></script>
+    <script src="public/src/codemirror/keymap/sublime.js"></script>
+    <script src="public/src/codemirror/mode/python/python.js"></script>
+    <script src="public/src/codemirror/addon/fold/foldcode.js"></script>
+    <script src="public/src/codemirror/addon/fold/foldgutter.js"></script>
+    <script src="public/src/codemirror/addon/fold/brace-fold.js"></script>
+    <script src="public/src/codemirror/addon/fold/indent-fold.js"></script>
+    <script src="public/src/codemirror/addon/fold/comment-fold.js"></script>
+    <script src="public/src/codemirror/addon/edit/closebrackets.js"></script>
+    <script src="public/src/codemirror/addon/edit/matchbrackets.js"></script>
+    <script src="public/src/js/study.js"></script>
+    <script src="public/src/js/index.js"></script>
+    <script>
+     const SERVER = "http://localhost:3000"
+    </script>
+    <link rel="apple-touch-icon" sizes="57x57" href="public/src/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="public/src/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="public/src/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="public/src/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="public/src/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="public/src/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="public/src/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="public/src/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/src/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="public/src/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/src/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="public/src/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/src/img/favicon-16x16.png">
+    <link rel="shortcut icon" sizes="114x115" href="public/src/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="public/src/img/apple-icon-114x114.png">
+    <link rel="manifest" href="public/src/img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="public/src/img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body>
+    <main>
+      <header class="py-2 mb-2 mt-2">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-10" id="sitename">
+              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <span class="fs-2 font-lobster">The Hitchhiker's Guide to Python</span>
+              </a>
+            </div>
+
+            <!-- Sign up -->
+            <div class="col-md-1">
+              <button type="button" class="btn btn-dark float-end" data-bs-toggle="modal" data-bs-target="#modal-signup" id="signup" style="display: block">Sign up</button>
+              <div class="modal fade" id="modal-signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title fs-5 fw-bold" id="staticBackdropLabel1">Sign up for free</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control rounded-4" id="signup-email" placeholder="name@example.com">
+                        <label for="signup-email">Email address</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control rounded-4" id="signup-password" placeholder="Password">
+                        <label for="signup-password">Password</label>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control rounded-4" id="signup-username" placeholder="Password">
+                        <label for="signup-password">Full name</label>
+                      </div>
+                      <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" id="signup-submit" data-bs-dismiss="modal">Sign up</button>
+                      <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                      <hr class="my-4">
+                      <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                      <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" type="submit">
+                        <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"/></svg>
+                        Sign up with GitHub
+                      </button>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sign in -->
+            <div class="col-md-1 float-end">
+              <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" id="signin" style="display: block">Sign in</button>
+                <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title fs-5 fw-bold" id="staticBackdropLabel2">Sign in</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control rounded-4" id="signin-email" placeholder="name@example.com">
+                          <label for="signin-email">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                          <input type="password" class="form-control rounded-4" id="signin-password" placeholder="Password">
+                          <label for="signin-password">Password</label>
+                        </div>
+                        <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" id="signin-submit" data-bs-dismiss="modal">Sign in</button>
+                        <hr class="my-4">
+                        <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+                        <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4">
+                          <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"/></svg>
+                          Sign in with GitHub
+                        </button>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Profile -->
+            <div class="dropdown text-end" id="profile" style="display: none">
+              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" id="signout" href="#">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
+    <div class="px-4">
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+          <div class="p-4 bg-light border rounded-3 scrollable-menu" id="content" style="min-height: 35rem;">
+            <script>
+              example();
+            </script>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="forincode border">
+            <form action="">
+              <textarea id="editor" class="editor"></textarea>
+            </form>
+          </div>
+          <div class="h-100 p-4 bg-light border rounded-3 outscroll">
+            <p>this is for output</p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-md-center p-4">
+        <div class="col-md-1">
+          <a class="leftBtn" href="#">
+            <i class="material-icons">arrow_circle_left</i>
+          </a>
+          <a class="rightBtn" href="#">
+            <i class="material-icons">arrow_circle_right</i>
+          </a>
+        </div>
+        <div class="col-md-10">
+          <label for="customRange3" class="form-label">Example range</label>
+          <input type="range" class="form-range" min="0" max="29" step="1" id="customRange3" onchange="updateTextInput(this.value);">
+          <input type="text" id="textInput" value="">
+        </div>
+        <div class="col-md-1 order-last text-end">
+          <button id="test" class="btn btn-primary">submit</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>&copy; 2021 오픈소스 해커톤 팀 6 &middot; TEAM PYTHON_HITCHHIKER &middot; <a href="https://github.com/python-hitchhiker" class="github-href">GITHUB</a></p>
+    </footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+  </body>
+</html>
