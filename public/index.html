@@ -46,6 +46,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="src/img/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
   </head>
 
   <body>
@@ -177,8 +178,9 @@
           </a>
         </div>
         <div class="col-md-10">
-          <label for="customRange3" class="form-label">Example range</label>
-          <input type="range" class="form-range" min="0" max="29" step="1" id="customRange3" onchange="updateTextInput(this.value);">
+          <!-- <label for="progress" class="form-label">Example range</label> -->
+          <input type="range" value="" class="form-range" min="0" max="29" step="1" id="progress" onchange="updateTextInput(this.value);">
+          <script>setProgress(sessionStorage.getItem('progress'))</script>
           <input type="text" id="textInput" value="">
         </div>
         <div class="col-md-1 order-last text-end">

@@ -1,7 +1,26 @@
 'use strict';
 
+var progressid = sessionStorage.getItem('progress');
+
+function setProgress(val) {
+    document.getElementById('progress').value=val;
+}
+
+function updateTextInput(val) {
+    document.getElementById('textInput').value=val;
+    progressid = sessionStorage.setItem('progress', val);
+    location.reload();
+}
+
 function example() {
-    fetch(`${SERVER}/content/description/010`).then((response) => response.json()
+    var pnum;
+    if (Number(progressid) > 9) {
+        pnum = "0" + String(progressid);
+    }
+    else if (Number(progressid) >= 0) {
+        pnum = "00" + String(progressid);
+    }
+    fetch(`${SERVER}/content/description/${pnum}`).then((response) => response.json()
     ).then(
         (json) => {
             let content = json.content;
@@ -11,9 +30,17 @@ function example() {
         }
     )
 };
+//
 
 async function sampleCode() {
-    const res = await fetch(`${SERVER}/content/code/010`);
+    var pnum;
+    if (Number(progressid) > 9) {
+        pnum = "0" + String(progressid);
+    }
+    else if (Number(progressid) >= 0) {
+        pnum = "00" + String(progressid);
+    }
+    const res = await fetch(`${SERVER}/content/code/${pnum}`);
     if (res.ok) {
         const data = await res.json();
         return data.content;
