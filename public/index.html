@@ -168,20 +168,22 @@
           </div>
         </div>
       </div>
-      <div class="row align-items-md-center p-4">
-        <div class="col-md-1">
-          <a class="leftBtn" href="#">
-            <i class="material-icons">arrow_circle_left</i>
-          </a>
-          <a class="rightBtn" href="#">
-            <i class="material-icons">arrow_circle_right</i>
-          </a>
+      <div class="row align-items-center py-4">
+        <div class="col-md-1 d-flex justify-content-start">
+          <button type="button" class="btn btn-secondary" onclick="leftBtnClick()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+            <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"></path>
+            </svg>
+          </button>
+          <button type="button" class="btn btn-secondary" onclick="rightBtnClick()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+            </svg>
+          </button>
         </div>
-        <div class="col-md-10">
-          <!-- <label for="progress" class="form-label">Example range</label> -->
-          <input type="range" value="" class="form-range" min="0" max="29" step="1" id="progress" onchange="updateTextInput(this.value);">
+        <div class="col-md-10 d-flex justify-content-end ps-5">
+          <input type="range" value="" class="form-range" min="0" max="29" step="1" id="progress" onchange="barMovement(this.value);">
           <script>setProgress(sessionStorage.getItem('progress'))</script>
-          <input type="text" id="textInput" value="">
         </div>
         <div class="col-md-1 order-last text-end">
           <button id="test" class="btn btn-primary">submit</button>

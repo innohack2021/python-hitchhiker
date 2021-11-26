@@ -6,9 +6,24 @@ function setProgress(val) {
     document.getElementById('progress').value=val;
 }
 
-function updateTextInput(val) {
-    document.getElementById('textInput').value=val;
+function barMovement(val) {
+//    document.getElementById('textInput').value=val;
     progressid = sessionStorage.setItem('progress', val);
+    location.reload();
+}
+
+function leftBtnClick() {
+    if (Number(progressid) > 0) {
+        progressid = sessionStorage.setItem('progress', String(Number(progressid) - 1));
+    }
+    location.reload();
+}
+
+function rightBtnClick() {
+    if (Number(progressid) < 29) {
+        progressid = sessionStorage.setItem('progress', String(Number(progressid) + 1));
+    }
+    console.log(progressid);
     location.reload();
 }
 
