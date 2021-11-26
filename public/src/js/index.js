@@ -28,6 +28,7 @@ signup.addEventListener('click', async (e) => {
 	})
   if (response.status === 200) {
     console.log("회원가입 성공");
+    signUpSnackbar();
   }
   else {
     console.log("회원가입 실패");
@@ -45,7 +46,7 @@ signin.addEventListener('click', function (e) {
       password: $('#signin-password').value,
     }),
 	})
-  .then((response) => { 
+  .then((response) => {
     console.log(response);
     return(response.json());
   } )
@@ -59,6 +60,7 @@ signin.addEventListener('click', function (e) {
     $('#signin').style.display= "none";
   })
   .catch((error) => {
+    signInSnackbar();
     console.log(error);
   })
 });
