@@ -1,61 +1,66 @@
-'use strict';
-
-if (!sessionStorage.getItem('progress')) {
-  sessionStorage.setItem('progress', 0);
+if (!sessionStorage.getItem('page')){
+  sessionStorage.setItem('page', 0);
 }
 
-var progressid = sessionStorage.getItem('progress');
+window.addEventListener('load', function (e) {
+  if (sessionStorage.getItem('isLoggedIn')) {
+    document.querySelector('#profile').style.display= "block";
+    document.querySelector('#signup').style.display= "none";
+    document.querySelector('#signin').style.display= "none";
+  }
+});
 
-function setProgress(val) {
-  document.getElementById('progress').value=val;
+var pageId = sessionStorage.getItem('page');
+
+function setPage(val) {
+  document.getElementById('page').value=val;
 }
 
 function barMovement(val) {
   // document.getElementById('textInput').value=val;
-  progressid = sessionStorage.setItem('progress', val);
+  pageId = sessionStorage.setItem('progress', val);
   location.reload();
 }
 
 function leftBtnClick() {
-  if (Number(progressid) > 0) {
-    progressid = sessionStorage.setItem('progress', String(Number(progressid) - 1));
+  if (Number(pageId) > 0) {
+    pageId = sessionStorage.setItem('page', String(Number(pageId) - 1));
   }
   location.reload();
 }
 
 
 function rightBtnClick() {
-  if (Number(progressid) < 29 && sessionStorage.getItem("isLoggedIn")) {
-    fetch(`${SERVER}/users/plus`, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email: sessionStorage.getItem("email"),
-      }),
-    })
-    .then((response) => { 
-      console.log(response);
-      return(response.json());
-    })
-    .then((json) => {
-      sessionStorage.setItem("progress", json.progress);
-    })
-    .catch((error) => {
-      console.log(error);
-    })
+  if (Number(pageId) < 29 && sessionStorage.getItem("isLoggedIn")) {
+    pageId = sessionStorage.setItem('page', String(Number(pageId) + 1));
+    if (Number(pageId) > Number(sessionStorage.getItem('progress'))) {
+      fetch(`${SERVER}/users/plus`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: sessionStorage.getItem("email"),
+        }),
+      })
+      .then(() => { 
+        sessionStorage.setItem('progress', String(Number(pageId) - 1));
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+    }
   }
   location.reload();
 }
 
 function example() {
     var pnum;
-    if (Number(progressid) > 9) {
-        pnum = "0" + String(progressid);
+    if (Number(pageId) > 9) {
+        pnum = "0" + String(pageId);
     }
-    else if (Number(progressid) >= 0) {
-        pnum = "00" + String(progressid);
+    else if (Number(pageId) >= 0) {
+        pnum = "00" + String(pageId);
     }
     fetch(`${SERVER}/content/description/${pnum}`).then((response) => response.json()
     ).then(
@@ -71,11 +76,11 @@ function example() {
 
 async function sampleCode() {
     var pnum;
-    if (Number(progressid) > 9) {
-        pnum = "0" + String(progressid);
+    if (Number(pageId) > 9) {
+        pnum = "0" + String(pageId);
     }
-    else if (Number(progressid) >= 0) {
-        pnum = "00" + String(progressid);
+    else if (Number(pageId) >= 0) {
+        pnum = "00" + String(pageId);
     }
     const res = await fetch(`${SERVER}/content/code/${pnum}`);
     if (res.ok) {
