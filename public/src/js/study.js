@@ -19,6 +19,7 @@ window.addEventListener("load", function (e) {
 
 function setPage(val) {
   document.getElementById("page").value = val;
+
 }
 
 function barMovement(val) {
@@ -34,6 +35,7 @@ function leftBtnClick() {
   }
   location.reload();
 }
+
 
 function rightBtnClick() {
   if (Number(pageId) < 29 && sessionStorage.getItem("isLoggedIn")) {

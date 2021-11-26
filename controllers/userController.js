@@ -84,13 +84,13 @@ module.exports = {
 
 	plus: async (req, res, next) => {
 		try {
-			if (req.session.isLoggedIn == true) {
+			// if (req.session.isLoggedIn == true) {
 				let { email } = req.body;
 				const user = await User.findOne({ where: { email: email } });
 				user.progress = user.progress + 1;
 				await user.save();
 				res.send('updated user progress');
-			}
+			// }
 		} catch (e) {
 			next(e)
 			return;
@@ -99,7 +99,7 @@ module.exports = {
 
 	minus: async (req, res, next) => {
 		try {
-			if (req.session.isLoggedIn == true) {
+			// if (req.session.isLoggedIn == true) {
 				let { email } = req.body;
 				const user = await User.findOne({ where: { email: email } });
 				if (user.progress > 0) {
@@ -109,7 +109,7 @@ module.exports = {
 				} else {
 					res.send('user progress is less than 0');
 				}
-			}
+			// }
 		} catch (e) {
 			next(e)
 			return;
