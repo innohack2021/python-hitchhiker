@@ -1,5 +1,7 @@
 'use strict';
 
+
+
 var progressid = sessionStorage.getItem('progress');
 
 function setProgress(val) {
