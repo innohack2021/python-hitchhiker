@@ -1,6 +1,8 @@
 'use strict';
 
-
+if (!sessionStorage.getItem('progress')) {
+    sessionStorage.setItem('progress', 0);
+}
 
 var progressid = sessionStorage.getItem('progress');
 
