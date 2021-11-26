@@ -6,7 +6,6 @@ const sitename = $('#sitename');
 const signup = $('#signup-submit');
 const signin = $('#signin-submit');
 const signout = $('#signout');
-
 const firstPage = 'index.html';
 
 sitename.addEventListener('click', function (e) {
