@@ -59,6 +59,7 @@ signin.addEventListener('click', function (e) {
     $('#profile').style.display= "block";
     $('#signup').style.display= "none";
     $('#signin').style.display= "none";
+	location.reload();
   })
   .catch((error) => {
     signInSnackbar();

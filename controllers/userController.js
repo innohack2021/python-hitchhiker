@@ -20,7 +20,7 @@ module.exports = {
 		return;
 	}
 	},
-	
+
 	login: async (req, res, next) => {
 		let { password, email } = req.body;
 		try {
@@ -84,13 +84,11 @@ module.exports = {
 
 	plus: async (req, res, next) => {
 		try {
-			if (req.session.isLoggedIn == true) {
-				let { email } = req.body;
-				const user = await User.findOne({ where: { email: email } });
-				user.progress = user.progress + 1;
-				await user.save();
-				res.send('updated user progress');
-			}
+			let { email } = req.body;
+			const user = await User.findOne({ where: { email: email } });
+			user.progress = user.progress + 1;
+			await user.save();
+			res.send('updated user progress');
 		} catch (e) {
 			next(e)
 			return;
@@ -102,7 +100,7 @@ module.exports = {
 			if (req.session.isLoggedIn == true) {
 				let { email } = req.body;
 				const user = await User.findOne({ where: { email: email } });
-				if (user.progess > 0) {
+				if (user.progress > 0) {
 					user.progress = user.progress - 1;
 					await user.save();
 					res.send('updated user progress');

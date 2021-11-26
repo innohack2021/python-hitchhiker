@@ -54,7 +54,7 @@ function rightBtnClick() {
       });
     }
   }
-  location.reload();
+  //location.reload();
 }
 
 function example() {
