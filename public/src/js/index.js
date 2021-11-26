@@ -1,4 +1,4 @@
-"use strict";
+
 
 const $ = (selector) => document.querySelector(selector);
 
@@ -6,7 +6,6 @@ const sitename = $('#sitename');
 const signup = $('#signup-submit');
 const signin = $('#signin-submit');
 const signout = $('#signout');
-
 const firstPage = 'index.html';
 
 sitename.addEventListener('click', function (e) {
@@ -56,6 +55,7 @@ signin.addEventListener('click', function (e) {
     sessionStorage.setItem("email", json.email);
     sessionStorage.setItem("id", json.id);
     sessionStorage.setItem("progress", json.progress);
+	sessionStorage.setItem("page", json.progress);
     $('#profile').style.display= "block";
     $('#signup').style.display= "none";
     $('#signin').style.display= "none";
