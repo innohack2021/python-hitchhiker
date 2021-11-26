@@ -16,8 +16,11 @@ router.post('/', async (req, res, next) => {
 		let userCreate = await User.create(req.body);
 		if (userCreate) return res.send('user is inserted');
 		else return res.status(204).send({ error: 'fail to create user' });
-	} catch { }
+	} catch (e) {
+		res.status(400).send(e)
+	}
 });
+
 //로그인
 router.post('/login', async (req, res, next) => {
 	let { password, email } = req.body;
@@ -39,8 +42,11 @@ router.post('/login', async (req, res, next) => {
 		} else {
 			res.status(204).send({ error: 'fail to login' });
 		}
-	} catch { }
+	} catch (e) {
+		res.status(400).send(e)
+	}
 });
+
 //유저들조회
 router.get('/', async (req, res, next) => {
 	try {
@@ -54,8 +60,11 @@ router.get('/', async (req, res, next) => {
 			return editUser;
 		});
 		res.send(data);
-	} catch { }
+	} catch (e) {
+		res.status(400).send(e)
+	}
 });
+
 //유저조회
 router.get('/:id', async (req, res, next) => {
 	const paramId = req.params.id;
@@ -68,22 +77,29 @@ router.get('/:id', async (req, res, next) => {
 		data.email = userFind.email;
 		data.progress = userFind.progress;
 		res.send(data);
-	} catch { }
+	} catch (e) {
+		res.status(400).send(e)
+	}
 });
 
 //유저 progress 플러스 수정
 router.put('/plus', async (req, res, next) => {
-	if (req.session.isLoggedIn == true) {
-		let { email } = req.body;
-		const user = await User.findOne({ where: { email: email } });
-		user.progress = user.progress + 1;
-		await user.save();
-		res.send('updated user progress');
+	try {
+		if (req.session.isLoggedIn == true) {
+			let { email } = req.body;
+			const user = await User.findOne({ where: { email: email } });
+			user.progress = user.progress + 1;
+			await user.save();
+			res.send('updated user progress');
+		}
+	} catch (e) {
+		res.status(400).send(e)
 	}
 });
 
 //유저 progress 마이너스 수정
 router.put('/minus', async (req, res, next) => {
+	try {
 	if (req.session.isLoggedIn == true) {
 		let { email } = req.body;
 		const user = await User.findOne({ where: { email: email } });
@@ -95,12 +111,15 @@ router.put('/minus', async (req, res, next) => {
 			res.send('user progress is less than 0');
 		}
 	}
+	} catch (e) {
+		res.status(400).send(e)
+	}
 });
 
-
+//로그아웃
 router.delete('/logout', async (req, res, next) => {
+	try {
 	if (req.session.isLoggedIn == true) {
-		// console.log('로그아웃하는 이메일=>', req.session.email); test 해보시면 ㄹ
 		req.session.destroy();
 		req.session.save(() => {
 			res.send('logout user');
@@ -108,14 +127,9 @@ router.delete('/logout', async (req, res, next) => {
 	} else {
 		res.send('no existence logout user');
 	}
+	} catch (e) {
+		res.status(400).send(e)
+	}
 })
-
-//유저삭제(참고API)
-router.delete('/:id', async (req, res, next) => {
-	const paramId = req.params.id;
-	await User.destroy({ where: { id: paramId } });
-
-	res.send('removed user');
-});
 
 module.exports = router;
