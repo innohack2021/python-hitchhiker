@@ -1,34 +1,52 @@
 'use strict';
 
 if (!sessionStorage.getItem('progress')) {
-    sessionStorage.setItem('progress', 0);
+  sessionStorage.setItem('progress', 0);
 }
 
 var progressid = sessionStorage.getItem('progress');
 
 function setProgress(val) {
-    document.getElementById('progress').value=val;
+  document.getElementById('progress').value=val;
 }
 
 function barMovement(val) {
-//    document.getElementById('textInput').value=val;
-    progressid = sessionStorage.setItem('progress', val);
-    location.reload();
+  // document.getElementById('textInput').value=val;
+  progressid = sessionStorage.setItem('progress', val);
+  location.reload();
 }
 
 function leftBtnClick() {
-    if (Number(progressid) > 0) {
-        progressid = sessionStorage.setItem('progress', String(Number(progressid) - 1));
-    }
-    location.reload();
+  if (Number(progressid) > 0) {
+    progressid = sessionStorage.setItem('progress', String(Number(progressid) - 1));
+  }
+  location.reload();
 }
 
+
 function rightBtnClick() {
-    if (Number(progressid) < 29) {
-        progressid = sessionStorage.setItem('progress', String(Number(progressid) + 1));
-    }
-    console.log(progressid);
-    location.reload();
+  if (Number(progressid) < 29 && sessionStorage.getItem("isLoggedIn")) {
+    fetch(`${SERVER}/users/plus`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: sessionStorage.getItem("email"),
+      }),
+    })
+    .then((response) => { 
+      console.log(response);
+      return(response.json());
+    })
+    .then((json) => {
+      sessionStorage.setItem("progress", json.progress);
+    })
+    .catch((error) => {
+      console.log(error);
+    })
+  }
+  location.reload();
 }
 
 function example() {
