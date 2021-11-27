@@ -1,3 +1,5 @@
+'use strict';
+
 if (!sessionStorage.getItem("isLoggedIn")) {
 	sessionStorage.setItem("progress", 0);
 }
