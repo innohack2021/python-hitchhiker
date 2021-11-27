@@ -1,6 +1,6 @@
 # backend.ai-webui
 
-[![GitHub version](https://badge.fury.io/gh/lablup%2Fbackend.ai-webui.svg)](https://github.com/innohack2021/python-hitchhiker)
+[![GitHub version](https://github.com/innohack2021/python-hitchhiker.svg)](https://github.com/innohack2021/python-hitchhiker)
 
 Make AI Accessible: Backend.AI Web UI (web/app) for End-user / DevOps / SysAdmin.
 
