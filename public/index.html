@@ -34,23 +34,23 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="src/img/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
   </head>
 
   <body>
     <main>
-      <header class="py-2 mb-2 mt-2">
+      <header class=" mb-2 mt-2">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-10" id="sitename">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-10" id="sitename">
               <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                 <span class="fs-2 font-lobster">The Hitchhiker's Guide to Python</span>
               </a>
             </div>
 
+
             <!-- Sign up -->
-            <div class="col-md-1">
-              <button type="button" class="btn btn-dark float-end" data-bs-toggle="modal" data-bs-target="#modal-signup" id="signup" style="display: none">Sign up</button>
+            <div class="col-6 col-sm-6 col-md-2 col-lg-2 col-xl-3 col-xxl-1 float-end">
+              <button type="button" class="btn btn-outline-secondary float-end" data-bs-toggle="modal" data-bs-target="#modal-signup" id="signup" style="display: none ">Sign Up</button>
               <div class="modal fade" id="modal-signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -89,8 +89,8 @@
             </div>
 
             <!-- Sign in -->
-            <div class="col-md-1 float-end">
-              <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" id="signin" style="display: none">Sign in</button>
+            <div class="col-6 col-sm-6 col-md-2 col-lg-2 col-xl-1 col-xxl-1 float-end">
+              <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" id="signin" style="display: none">Sign In</button>
                 <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                   <div class="modal-dialog">
                     <div class="modal-content" >
@@ -122,6 +122,7 @@
                   </div>
                 </div>
             </div>
+
           </div>
 
           <div class="row">
