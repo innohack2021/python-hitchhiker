@@ -1,3 +1,5 @@
+'use strict';
+
 const sitename = $('#sitename');
 const signup = $('#signup-submit');
 const signin = $('#signin-submit');
@@ -8,6 +10,8 @@ let signupmodal = new bootstrap.Modal(document.getElementById("modal-signup"));
 let signinmodal = new bootstrap.Modal(document.getElementById("staticBackdrop2"));
 
 sitename.addEventListener('click', function (e) {
+  e.preventDefault();
+  location.href=firstPage;
   location.replace(firstPage);
 });
 
