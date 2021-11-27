@@ -58,11 +58,12 @@ signin.addEventListener('click', function (e) {
     sessionStorage.setItem("email", json.email);
     sessionStorage.setItem("id", json.id);
     sessionStorage.setItem("progress", json.progress);
-	sessionStorage.setItem("page", json.progress);
+	  sessionStorage.setItem("page", json.progress);
     $('#profile').style.display= "block";
     $('#signup').style.display= "none";
     $('#signin').style.display= "none";
     signinmodal.hide();
+    location.reload();
   })
   .catch((error) => {
     signinmodal.show();
@@ -86,5 +87,7 @@ signout.addEventListener('click', async(e) => {
     $('#profile').style.display= "none";
     $('#signup').style.display= "block";
     $('#signin').style.display= "block";
+    sessionStorage.setItem("page", 0);
+    location.reload();
   })
 });

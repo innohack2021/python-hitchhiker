@@ -1,13 +1,16 @@
 'use strict';
 
 if (!sessionStorage.getItem("isLoggedIn")) {
-	sessionStorage.setItem("progress", 0);
-}
-
-if (!sessionStorage.getItem("page")) {
+	sessionStorage.setItem("page", 0);
+} else {
   let progress = sessionStorage.getItem("progress");
   sessionStorage.setItem("page", progress);
 }
+
+// if (!sessionStorage.getItem("page")) {
+//   let progress = sessionStorage.getItem("progress");
+//   sessionStorage.setItem("page", progress);
+// }
 
 let pageId = sessionStorage.getItem("page");
 
