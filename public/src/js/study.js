@@ -70,7 +70,7 @@ function rightBtnClick() {
 }
 
 function example() {
-  var pnum;
+  let pnum;
   if (Number(pageId) > 9) {
     pnum = "0" + String(pageId);
   } else if (Number(pageId) >= 0) {
@@ -88,7 +88,7 @@ function example() {
 //
 
 async function sampleCode() {
-  var pnum;
+  let pnum;
   if (Number(pageId) > 9) {
     pnum = "0" + String(pageId);
   } else if (Number(pageId) >= 0) {
