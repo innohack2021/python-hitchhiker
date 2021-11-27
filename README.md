@@ -1,4 +1,4 @@
-# python-hitchhiker
+# PYTHON HITCHHIKER
 
 Learn python easily: Python practice website (web/app) for end-users and developers.
 
