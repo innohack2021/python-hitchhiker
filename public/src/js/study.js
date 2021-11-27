@@ -11,14 +11,14 @@ var pageId = sessionStorage.getItem("page");
 
 window.addEventListener("load", function (e) {
   if (sessionStorage.getItem("isLoggedIn")) {
-    document.querySelector("#profile").style.display = "block";
-    document.querySelector("#signup").style.display = "none";
-    document.querySelector("#signin").style.display = "none";
+    $("#profile").style.display = "block";
+    $("#signup").style.display = "none";
+    $("#signin").style.display = "none";
   }
 });
 
 function setPage(val) {
-  document.getElementById("page").value = val;
+  $('#page').value = val;
 
 }
 
@@ -71,7 +71,7 @@ function example() {
     .then((json) => {
       let content = json.content;
       let code = json.code;
-      document.querySelector("#content").innerHTML = marked.parse(content);
+      $('#content').innerHTML = marked.parse(content);
       // Apply content / code to the HTML area
     });
 }
@@ -104,15 +104,15 @@ async function sampleCode() {
 // }
 
 window.onload = async function () {
-  var el = document.getElementById("editor");
+  let el = $("#editor");
   // var version = "# version: Python3\n\n";
-  var codeAreaTip = await sampleCode();
+  let codeAreaTip = await sampleCode();
   // var codeStart = "# code start\n\n";
   // var codeEnd = "# code end\n\n";
   // var codeTip = "'''\nThis function is the entry of this program and\nit must be return your answer of current question.\n'''\n";
   // var code = "def solution():\n\tpass";
-  var initValue = codeAreaTip;
-  var myCodeMirror = CodeMirror.fromTextArea(el, {
+  let initValue = codeAreaTip;
+  let myCodeMirror = CodeMirror.fromTextArea(el, {
     mode: "python", // Language mode
     theme: "xq-light", // theme
     keyMap: "sublime", // Fast key style
@@ -137,9 +137,9 @@ window.onload = async function () {
   myCodeMirror.setOption("value", initValue);
   // Editor key listening
   myCodeMirror.setSize("", "25rem");
-  var test = document.getElementById("test");
+  let test = $("#test");
   test.onclick = function () {
-    var value = myCodeMirror.getValue();
+    let value = myCodeMirror.getValue();
     axios
       .post("http://localhost/api/runcode", {
         code: value,

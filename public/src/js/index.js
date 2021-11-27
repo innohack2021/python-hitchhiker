@@ -1,19 +1,13 @@
-
-
-const $ = (selector) => document.querySelector(selector);
-
 const sitename = $('#sitename');
 const signup = $('#signup-submit');
 const signin = $('#signin-submit');
 const signout = $('#signout');
 const firstPage = 'index.html';
 
-var signupmodal = new bootstrap.Modal(document.getElementById("modal-signup"));
-var signinmodal = new bootstrap.Modal(document.getElementById("staticBackdrop2"));
+let signupmodal = new bootstrap.Modal(document.getElementById("modal-signup"));
+let signinmodal = new bootstrap.Modal(document.getElementById("staticBackdrop2"));
 
 sitename.addEventListener('click', function (e) {
-  e.preventDefault();
-  location.href=firstPage;
   location.replace(firstPage);
 });
 

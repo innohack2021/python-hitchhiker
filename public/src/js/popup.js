@@ -2,7 +2,7 @@
 
 function signInSnackbar()
 {
-	var x = document.getElementById("signinfail");
+	let x = $("#signinfail");
 
 	// Add the "snackbarshow" class to DIV
 	x.className = "snackbarshow";
@@ -13,7 +13,7 @@ function signInSnackbar()
 
 function signUpSnackbar()
 {
-	var x = document.getElementById("signupsuccess");
+	let x = $("#signupsuccess");
 
 	// Add the "snackbarshow" class to DIV
 	x.className = "snackbarshow";
