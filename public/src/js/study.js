@@ -9,13 +9,21 @@ if (!sessionStorage.getItem("page")) {
 
 var pageId = sessionStorage.getItem("page");
 
+
 window.addEventListener("load", function (e) {
   if (sessionStorage.getItem("isLoggedIn")) {
     document.querySelector("#profile").style.display = "block";
     document.querySelector("#signup").style.display = "none";
     document.querySelector("#signin").style.display = "none";
   }
+  else {
+    document.querySelector("#profile").style.display = "none";
+    document.querySelector("#signup").style.display = "block";
+    document.querySelector("#signin").style.display = "block";
+  }
 });
+
+
 
 function setPage(val) {
   document.getElementById("page").value = val;
