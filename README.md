@@ -2,6 +2,7 @@
 
 Learn python easily: Python practice website (web/app) for end-users and developers.
 
+</br>
 
 ## Role
 
@@ -13,6 +14,7 @@ Python-hichhiker focuses to...
  * Make learning programming languages easy for everyone
  * Display the result of a code on your browser without any software tools
 
+</br>
 
 ## User Features
  * Free membership
@@ -25,6 +27,8 @@ Python-hichhiker focuses to...
     * Display the result of your python code
     * Progress bar to check how much you have learned
  
+</br>
+
 ## Management Features
  * User management
     * User creation
@@ -35,6 +39,7 @@ Python-hichhiker focuses to...
     * Delegate login to web server
     * Support userid / password login
 
+</br>
 
 @jeongwhl 셋업 가이드 우리팀에게 맞게 수정 바랍니다.
 
@@ -94,25 +99,30 @@ webServerURL = "[Web server website URL. App will use the site instead of local 
 #page = "test-plugin1,test-plugin2"
 
 ```
+</br>
 
 ## Branches
 
  * main : Development branch
  * release : Latest release branch
 
-
+</br>
 
 ## Development Guide
 
 Python-hitchhiker Web UI is built with
  * `npm` as package manager
 
-### Code of conduct
+</br>
+
+## Code of conduct
 
 View [Code of conduct](https://github.com/lablup/backend.ai-webui/blob/main/CODE_OF_CONDUCT.md) for community guidelines.
 
 
-### Initializing python-hitchhiker
+</br>
+
+## Initializing python-hitchhiker
 
 ```
 $ npm i
@@ -121,20 +131,22 @@ $ npm i
 ```
 $ npm run start
 ```
+</br>
 
-### Developing and testing without bundling
+## Developing and testing without bundling
 
 ```
 $ npm run dev # To run dev. web server
 ```
+</br>
 
-
-### Initializing backend.ai 
+## Initializing backend.ai 
 
 Install on your PC: [Quick start guidelines](https://docs.backend.ai/en/latest/install/guides.html)
 
 Or run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
 
+</br>
 
 @jeongwhl 원래 백엔드닷에이아이에서 언어 추가하는 파트였는데, 문제 추가하는 방법으로 바꿔주세요.
 
@@ -150,6 +162,7 @@ e.g.
 
 Note: DO NOT DELETE 'default' language. It is used for browser language.
 
+</br>
 
 ### License
 
