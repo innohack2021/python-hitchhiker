@@ -1,94 +1,30 @@
 # python-hitchhiker
 
-[![GitHub version](https://badge.fury.io/gh/lablup%2Fbackend.ai-webui.svg)](https://badge.fury.io/gh/lablup%2Fbackend.ai-webui)
-
-Make AI Accessible: Backend.AI Web UI (web/app) for End-user / DevOps / SysAdmin.
-
-For more information, see [manual](https://console.docs.backend.ai/en/latest/).
-
-## Changelog
-
-View [changelog](https://github.com/lablup/backend.ai-webui/blob/main/CHANGELOG.md)
-
 ## Role
 
-Backend.AI Web UI focuses to
+python-hichhiker focuses to
 
- * Serve as desktop app (windows, macOS and Linux) and web service
- * Provide both basic administration and user mode
-    * Use CLI for detailed administration features such as domain administation
- * Versatile devices ready such as mobile, tablet and desktop.
- * Built-in websocket proxy feature for apps
+ * 누구나 코딩 연습할 수 있는 프로그램 제작 가능 
+ * 다양한 언어 코딩 연습 가능
+ * 
+ * 
 
 ## User Features
- * Session management
-    * Set default resources for runs
-    * Monitor current resources sessions using
-    * Choose and run environment-supported apps
-    * Web-based Terminal for each session
-    * Fully-featured Visual Studio Code editor and environments
- * Pipeline
-    * Experiments (with SACRED / Microsoft NNI / Apache MLFlow)
-    * AutoML (with Microsoft NNI / Apache MLFlow)
-    * Manages container streams with pipeline vfolders
-    * Storage proxy for fast data I/O between backend.ai cluster and user
-    * Checks queue and scheduled jobs
- * Storage management
-    * Create / delete folders
-    * Upload  / download files (with upload progress)
-    * Integrated SSH/SFTP server (app mode only)
-    * Share folders with friends / groups
- * Node management
-    * See calculation nodes in Backend.AI cluster
-	* Live statistics of bare-metal / VM nodes
- * Statistics
-    * User resource statistics
-    * Session statistics
-    * Workload statistics
-    * Per-node statistics
-    * Insight (working)
- * Configurations
-    * User-specific web / app configurations
-    * System maintenances
-    * Beta features
-    * WebUI logs / errors
- * License
-    * Check current license information (for enterprise only)
- * Plugins
-    * Per-site specific plugin architecture
-    * Device plugins / storage plugins
- * Help & manuals
-    * Online manual
-
+ * 문제
+    * 파이썬 예제 30개 풀이
+    * 진도 확인
+ 
 ## Management Features
+ * 유저 관리
+    * 회원가입
+    * 로그인
+    * 로그아웃
 
- * Kernel managements
-    * List supported kernels
-     * Add kernel
-     * Refresh kernel list
-     * Categorize repository
-     * Add/update resource templates
-     * Add/remove docker registries
- * User management
-    * User creation / deletion / key management / resource templates
- * Keypair management
-    * Allocate resource limitation for keys
-    * Add / remove resource policies for keys
- * Manager settings
-    * Add /setting repository
-    * Plugin support
- * Proxy mode to support various app environments (with node.js (web), electron (app) )
-    * Needs backend.ai-wsproxy package
- * Service information
-    * Component compatibility
-    * Security check
-    * License information
- * Work with Web server (github/lablup/backend.ai-webserver)
-    * Delegate login to web server
-    * Support userid / password login
 
 ## Setup Guide
 ### Baked versions
+
+
 `backend.ai-webui` production version is also served as `backend.ai-app` and refered by `backend.ai-webserver` as submodule. If you use `backend.ai-webserver`, you are using latest stable release of `backend.ai-webui`.
 
 ### Configuration
