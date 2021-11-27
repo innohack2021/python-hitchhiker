@@ -23,9 +23,10 @@
     <script src="src/codemirror/addon/edit/closebrackets.js"></script>
     <script src="src/codemirror/addon/edit/matchbrackets.js"></script>
     <script src="src/js/study.js"></script>
-    <script src="src/js/edit_profile.js"></script>
+    <script src="src/js/popup.js"></script>
     <script>
      const SERVER = "http://localhost:3000"
+     const $ = (selector) => document.querySelector(selector);
     </script>
     <link rel="apple-touch-icon" sizes="57x57" href="src/img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="src/img/apple-icon-60x60.png">
@@ -83,7 +84,7 @@
                         <input type="text" class="form-control rounded-4" id="signup-username" placeholder="Password">
                         <label for="signup-password">Full name</label>
                       </div>
-                      <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" id="signup-submit" data-bs-dismiss="modal">Sign up</button>
+                      <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" id="signup-submit">Sign up</button>
                       <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
                       <hr class="my-4">
                       <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
@@ -105,7 +106,7 @@
               <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" id="signin" style="display: block">Sign in</button>
                 <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                   <div class="modal-dialog">
-                    <div class="modal-content">
+                    <div class="modal-content" >
                       <div class="modal-header">
                         <h5 class="modal-title fs-5 fw-bold" id="staticBackdropLabel2">Sign in</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -119,7 +120,7 @@
                           <input type="password" class="form-control rounded-4" id="signin-password" placeholder="Password">
                           <label for="signin-password">Password</label>
                         </div>
-                        <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" id="signin-submit" data-bs-dismiss="modal">Sign in</button>
+                        <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" id="signin-submit">Sign in</button>
                         <hr class="my-4">
                         <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
                         <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4">
@@ -134,9 +135,12 @@
                   </div>
                 </div>
             </div>
+          </div>
 
+          <div class="row">
+            <div class="col-md-11"></div>
             <!-- Profile -->
-            <div class="dropdown text-end" id="profile" style="display: none">
+            <div class="col-md-1 dropdown text-end" id="profile" style="display: none">
               <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
               </a>
@@ -169,7 +173,7 @@
         </div>
       </div>
       <div class="row align-items-center py-4">
-        <div class="col-md-1 d-flex justify-content-start">
+        <div class="col-md-1 d-flex justify-content-start btn-group">
           <button type="button" class="btn btn-secondary" onclick="leftBtnClick()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
             <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"></path>
@@ -183,7 +187,7 @@
         </div>
         <div class="col-md-10 d-flex justify-content-end ps-5">
           <input type="range" value="" class="form-range" min="0" max="29" step="1" id="page" onchange="barMovement(this.value);">
-          <script>setPage(sessionStorage.getItem('progress'))</script>
+          <script>setPage(sessionStorage.getItem('page'))</script>
         </div>
         <div class="col-md-1 order-last text-end">
           <button id="test" class="btn btn-primary">submit</button>
