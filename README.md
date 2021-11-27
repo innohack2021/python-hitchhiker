@@ -1,4 +1,4 @@
-# backend.ai-webui
+# python-hitchhiker
 
 [![GitHub version](https://badge.fury.io/gh/lablup%2Fbackend.ai-webui.svg)](https://badge.fury.io/gh/lablup%2Fbackend.ai-webui)
 
