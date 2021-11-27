@@ -3,11 +3,11 @@ if (!sessionStorage.getItem("isLoggedIn")) {
 }
 
 if (!sessionStorage.getItem("page")) {
-  var progress = sessionStorage.getItem("progress");
+  let progress = sessionStorage.getItem("progress");
   sessionStorage.setItem("page", progress);
 }
 
-var pageId = sessionStorage.getItem("page");
+let pageId = sessionStorage.getItem("page");
 
 window.addEventListener("load", function (e) {
   if (sessionStorage.getItem("isLoggedIn")) {
