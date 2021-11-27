@@ -2,9 +2,6 @@
 
 if (!sessionStorage.getItem("isLoggedIn")) {
 	sessionStorage.setItem("page", 0);
-} else {
-  let progress = sessionStorage.getItem("progress");
-  sessionStorage.setItem("page", progress);
 }
 
 // if (!sessionStorage.getItem("page")) {
@@ -64,12 +61,15 @@ function rightBtnClick() {
         body: JSON.stringify({
           email: sessionStorage.getItem("email"),
         }),
-      }).catch((error) => {
+      })
+	  .then(() => {
+		  location.reload();
+	  })
+	  .catch((error) => {
         console.log(error);
       });
     }
   }
-  location.reload();
 }
 
 function example() {
