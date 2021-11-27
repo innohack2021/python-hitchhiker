@@ -19,9 +19,9 @@ window.addEventListener("load", function (e) {
     $("#signin").style.display = "none";
   }
   else {
-    document.querySelector("#profile").style.display = "none";
-    document.querySelector("#signup").style.display = "block";
-    document.querySelector("#signin").style.display = "block";
+    $("#profile").style.display = "none";
+    $("#signup").style.display = "block";
+    $("#signin").style.display = "block";
   }
 });
 
