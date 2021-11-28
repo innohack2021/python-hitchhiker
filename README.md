@@ -115,7 +115,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/S0YKIM"><img src="" width="100px;" alt=""/><br /><sub><b>Soyeon Kim</b></sub></a><br /><a href="https://github.com/S0YKIM" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/swkim12345"><img src="" width="100px;" alt=""/><br /><sub><b>Sunghwan Kim</b></sub></a><br /><a href="https://github.com/swkim12345" title="Code">💻</a></td>
-     <td align="center"><a href="https://github.com/jujinesy"><img src="" width="100px;" alt=""/><br /><sub><b>Jujin Bae</b></sub></a><br /><a href="https://github.com/jujinesy" title="Code">💻</a></td>
+     <td align="center"><a href="https://github.com/jujinesy"><img src="https://user-images.githubusercontent.com/88143547/143767412-2948af4a-2b45-43b0-abad-a2d4d23b8521.png" width="100px;" alt=""/><br /><sub><b>Jujin Bae</b></sub></a><br /><a href="https://github.com/jujinesy" title="Code">💻</a></td>
      <td align="center"><a href="https://github.com/Yaminyam"><img src="" width="100px;" alt=""/><br /><sub><b>Sion Kang</b></sub></a><br /><a href="https://github.com/Yaminyam" title="Code">💻</a></td>
      <td align="center"><a href="https://github.com/ft-jasong"><img src=" " width="100px;" alt=""/><br /><sub><b>Jaeryong Song
 </b></sub></a><br /><a href="https://github.com/ft-jasong" title="Code">💻</a></td>
@@ -127,4 +127,3 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-![jubae-removebg-preview](https://user-images.githubusercontent.com/88143547/143767412-2948af4a-2b45-43b0-abad-a2d4d23b8521.png)
