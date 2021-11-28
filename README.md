@@ -41,13 +41,13 @@ Python-hichhiker focuses to...
 
 </br>
 
-@jeongwhl 셋업 가이드 우리팀에게 맞게 수정 바랍니다.
+(@jeongwhl 셋업 가이드 우리팀에게 맞게 수정 바랍니다.)
 
 ## Setup Guide
 ### Baked versions
-`backend.ai-webui` production version is also served as `backend.ai-app` and refered by `backend.ai-webserver` as submodule. If you use `backend.ai-webserver`, you are using latest stable release of `backend.ai-webui`.
+`python-hitchhiker` production version is served as `python-hitchhiker-webservice`. If you use `python-hitchhiker-webservice`, you are using latest stable release of `python-hitchhiker`.
 
-### Configuration
+### Configuration ( @jasong 코드 미러 및 backend-ai 셋팅관련 내용 적어주세요.)
 
 Backend.AI Web UI uses `config.toml` located in app root directory. You can prepare many `config.toml.[POSTFIX]` in `configs` directory to switch various configurations.
 
@@ -104,7 +104,7 @@ webServerURL = "[Web server website URL. App will use the site instead of local 
 ## Branches
 
  * main : Development branch
- * release : Latest release branch
+ * release : Latest release branch   (우리 서비스 release branch 만들 것인가요?)
 
 </br>
 
