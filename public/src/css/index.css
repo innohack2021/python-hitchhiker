@@ -66,6 +66,9 @@ div.outscroll{
     overflow-x: hidden;
 }
 
+div.left-align{
+    text-align: left;
+}
 
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #signinfail {
