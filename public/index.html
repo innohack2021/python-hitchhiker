@@ -91,7 +91,7 @@
             <div class="col">
               <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" id="signin" style="display: none">Sign In</button>
                 <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                  <div class="modal-dialog">
+                  <div class="modal-dialog" id="modal-signin">
                     <div class="modal-content" >
                       <div class="modal-header">
                         <h5 class="modal-title fs-5 fw-bold" id="staticBackdropLabel2">Sign in</h5>
@@ -172,7 +172,7 @@
         </div>
       </div>
     </div>
-    <div id="signinfail" style="z-index:10000;">로그인 실패</div>
+    <div id="signinfail">로그인 실패</div>
     <div id="signupsuccess">회원 가입을 축하드립니다!</div>
 
     <!-- FOOTER -->
@@ -262,7 +262,7 @@
       export function errorAsString(e) {
           let result = '';
           for (let key in e) {
-              if (e.hasOwnProperty(key)) { 
+              if (e.hasOwnProperty(key)) {
               result = result + " " + key + "," + e[key] + "|";
               }
           }
@@ -277,7 +277,7 @@
               let code = document.querySelector(".CodeMirror").CodeMirror.getValue();
               console.log(code);
               console.log(typeof(code));
-              let resources = {"cpu": 1, 
+              let resources = {"cpu": 1,
                   "mem": "1g",
                   "mounts": [],
                   "env": {},
