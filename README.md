@@ -125,9 +125,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 ##  ✨ Code of conduct
 
-    View [Code of conduct](https://github.com/innohack2021/python-hitchhiker/blob/main/CODE_OF_CONDUCT.md) for community guidelines.
+ View [Code of conduct](https://github.com/innohack2021/python-hitchhiker/blob/main/CODE_OF_CONDUCT.md) for community guidelines.
 
 
 ## ✨ License
 
-    Refer to [LICENSE file](https://github.com/innohack2021/python-hitchhiker/blob/main/LICENSE.md).
+ Refer to [LICENSE file](https://github.com/innohack2021/python-hitchhiker/blob/main/LICENSE.md).
