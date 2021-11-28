@@ -25,17 +25,17 @@ window.addEventListener("load", function (e) {
   }
 });
 
-
-
 function setPage(val) {
   $('#page').value = val;
-
 }
 
 function barMovement(val) {
   // document.getElementById('textInput').value=val;
+  if (Number(sessionStorage.getItem("progress")) >= Number(val)) {
   sessionStorage.setItem("page", val);
   pageId = val;
+  location.reload();
+  }
   location.reload();
 }
 
@@ -69,6 +69,7 @@ function rightBtnClick() {
         console.log(error);
       });
     }
+    location.reload();
   }
 }
 
