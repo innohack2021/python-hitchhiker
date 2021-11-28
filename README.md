@@ -59,21 +59,20 @@ $ npm run start
 
 #### ✅ Initializing backend.AI
 
-Install on your PC: [Quick start guidelines](https://docs.backend.ai/en/latest/install/guides.html)
+ * Install on your PC: [Quick start guidelines](https://docs.backend.ai/en/latest/install/guides.html)
 
-Or run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
+ * Run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
 
 
-#### ✅ Initializing codemirror ( @jasong 코드 미러 셋팅관련 내용 적어주세요. )
+#### ✅ Initializing codemirror 
 
-         ㅁㅁㅁㅁㅁ
-         ㅁㅁㅁㅁㅁ
+ * Set on your code : [codemirror CDN](https://cdnjs.com/libraries/codemirror)
 
 #### Branches
 
  * main : Development branch
- * release : Latest release branch   (우리 서비스 release branch 만들 것인가요?)
-
+ * release : Latest release branch  
+ 
 #### Developing and testing without bundling
 
 ```
@@ -110,15 +109,16 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-     <td align="center"><a href="https://github.com/S0YKIM"><img src="" width="100px;" alt=""/><br /><sub><b>Soyeon Kim</b></sub></a><br /><a href="https://github.com/S0YKIM" title="Code">💻 </a></td>
-     <td align="center"><a href="https://github.com/swkim12345"><img src="" width="100px;" alt=""/><br /><sub><b>Sunghwan Kim</b></sub></a><br /><a href="https://github.com/swkim12345" title="Code">💻 🐛</a></td>
-     <td align="center"><a href="https://github.com/jujinesy"><img src="" width="100px;" alt=""/><br /><sub><b>Jujin Bae</b></sub></a><br /><a href="https://github.com/jujinesy" title="Code">💻</a></td>
-     <td align="center"><a href="https://github.com/Yaminyam"><img src="" width="100px;" alt=""/><br /><sub><b>Sion Kang</b></sub></a><br /><a href="https://github.com/Yaminyam" title="Code">💻</a></td>
-     <td align="center"><a href="https://github.com/ft-jasong"><img src=" " width="100px;" alt=""/><br /><sub><b>Jaeryong Song</b></sub></a><br /><a href="https://github.com/ft-jasong" title="Code">💻</a></td>
-     <td align="center"><a href="https://github.com/toy-k"><img src="" width="100px;" alt=""/><br /><sub><b>Jeonghwan Lee</b></sub></a><br /><a href="https://github.com/toy-k" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/S0YKIM"><img src="https://user-images.githubusercontent.com/88143547/143767506-c9a64153-a0de-4e6d-a959-490d5fc58283.jpeg" width="100px;" alt=""/><br /><sub><b>Soyeon Kim</b></sub></a><br /><a href="https://github.com/S0YKIM" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/swkim12345"><img src="https://user-images.githubusercontent.com/88143547/143767525-8e369e86-375b-498a-af2d-e52501601092.png" width="100px;" alt=""/><br /><sub><b>Sunghwan Kim</b></sub></a><br /><a href="https://github.com/swkim12345" title="Code">💻</a></td>
+     <td align="center"><a href="https://github.com/jujinesy"><img src="https://user-images.githubusercontent.com/88143547/143767412-2948af4a-2b45-43b0-abad-a2d4d23b8521.png" width="100px;" alt=""/><br /><sub><b>Jujin Bae</b></sub></a><br /><a href="https://github.com/jujinesy" title="Code">💻</a></td>
+     <td align="center"><a href="https://github.com/Yaminyam"><img src="https://user-images.githubusercontent.com/88143547/143767571-9173b376-ba4b-4dfb-8528-2f6048593620.png" width="100px;" alt=""/><br /><sub><b>Sion Kang</b></sub></a><br /><a href="https://github.com/Yaminyam" title="Code">💻</a></td>
+     <td align="center"><a href="https://github.com/ft-jasong"><img src="https://user-images.githubusercontent.com/88143547/143767547-13dd1ac2-76a1-4c96-831d-5427268e4cdc.png" width="100px;" alt=""/><br /><sub><b>Jaeryong Song</b></sub></a><br /><a href="https://github.com/ft-jasong" title="Code">💻</a></td>
+     <td align="center"><a href="https://github.com/toy-k"><img src="https://user-images.githubusercontent.com/88143547/143767557-e2b80fb9-8eb1-4597-b6c2-72edb1fbcd5d.png" width="100px;" alt=""/><br /><sub><b>Jeonghwan Lee</b></sub></a><br /><a href="https://github.com/toy-k" title="Code">💻</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
