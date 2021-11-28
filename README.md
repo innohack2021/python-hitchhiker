@@ -44,7 +44,7 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
 # 💡 Setup Guide
 
-Python-hitchhiker Web UI is built with
+### Python-hitchhiker Web UI is built with
  * `npm` as package manager
 
 </br>
