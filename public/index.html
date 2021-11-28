@@ -145,8 +145,7 @@
               <textarea id="editor" class="editor"></textarea>
             </form>
           </div>
-          <div class="mh-100 p-4 bg-light border rounded-3 outscroll" style="height: 10rem;">
-            <p>this is for output</p>
+          <div id="dl_result" class="mh-100 p-4 bg-light border rounded-3 outscroll" style="height: 10rem;">
           </div>
         </div>
       </div>
@@ -159,7 +158,7 @@
             </svg>
           </button>
           <button type="button" class="btn btn-secondary" onclick="rightBtnClick()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-rig ht-fill" viewBox="0 0 16 16">
             <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
             </svg>
           </button>
@@ -169,7 +168,7 @@
           <script>setPage(sessionStorage.getItem('page'))</script>
         </div>
         <div class="col-12 col-sm-12 col-md-1 order-last text-end">
-          <button id="test" class="btn btn-primary">submit</button>
+          <button id="runCode" class="btn btn-primary">submit</button>
         </div>
       </div>
     </div>
@@ -214,7 +213,103 @@
         </div>
       </div>
     </footer>
+    <!-- delete after implement of sending api ending point on back-->
+    <div>
+      <h4>Login</h4>
+      <form>
+          API Endpoint: <br/>
+          <input type="text" id="api_endpoint" placeholder="http://pythonhitchhiker.42seoul.kr:8091" value="http://pythonhitchhiker.42seoul.kr:8091" /><br/>
+          API Key: <br/>
+          <input type="text" id="apikey" autocomplete="username" placeholder="API key" value="AKIAIOSFODNN7EXAMPLE" /><br/>
+          Secret Key: <br/>
+          <input type="password" id="secretkey" autocomplete="current-password" placeholder="Secret Key" value="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY" /><br/><br/>
+          <input type="button" id="login_button" value="Login" />
+      </form>
+    </div>
+    <!-- DELETE UNTIL HERE-->
+    <!-- get code from server -->
+    <script type="module">
+      // Can be changed according to your directory path.
+      import "./src/js/backend.ai-client-es6.js";
+      document.querySelector("#login_button").addEventListener("click", login.bind(this));
+      document.querySelector("#runCode").addEventListener("click", execute.bind(this));
+      let client;
+      console.log(typeof client);
 
+      export async function login() {
+          // Create a client configuration object.
+          let config = new ai.backend.ClientConfig(
+              document.querySelector("#apikey").value,
+              document.querySelector("#secretkey").value,
+              document.querySelector("#api_endpoint").value
+          );
+
+          // Create a client object with configuration object.
+          client = new ai.backend.Client(
+              config,
+              "Backend.AI ES6 App.",
+          );
+          client.ready = false;
+          client.get_manager_version().then((response) => {
+              client.ready = true;
+              return Promise.resolve(true);
+          }).catch((e) =>{
+              console.log(`Login failed: ${e.message}`);
+              return Promise.resolve(false);
+          });
+      }
+
+      export function errorAsString(e) {
+          let result = '';
+          for (let key in e) {
+              if (e.hasOwnProperty(key)) { 
+              result = result + " " + key + "," + e[key] + "|";
+              }
+          }
+          return result;
+      }
+
+      export async function execute() {
+          try {
+              if (typeof client === "undefined") {
+                  await login();
+              }
+              let code = document.querySelector(".CodeMirror").CodeMirror.getValue();
+              console.log(code);
+              console.log(typeof(code));
+              let resources = {"cpu": 1, 
+                  "mem": "1g",
+                  "mounts": [],
+                  "env": {},
+                  "resource_opts": {},
+                  "group_name": "default",
+                  "scaling_group": "default",
+                  "maxWaitSeconds": 30};
+              await client.createIfNotExists("cr.backend.ai/stable/python:3.8-ubuntu18.04", "test", resources);
+
+              let run_id = Math.floor(Math.random() * 50000).toString();
+              let query = await client.execute("test", run_id, "query", code, {});
+              while (query.result.status != 'finished') {
+                  query = await client.execute("test", run_id, "query", ``, {});
+              }
+              let response = query;
+              if (response.result.exitCode === 0) {
+                  document.querySelector("#dl_result").innerHTML = response.result.console[0][1];
+                  return response.result.console[0][1];
+              } else {
+                  let result = errorAsString(response.result);
+                  return result;
+              }
+          } catch (err) {
+              switch (err.type) {
+                  case client.ERR_SERVER:
+                      console.log(`Session creation failed: ${err.message}`);
+                  default:
+                      console.log(`request/response failed: ${err.message}`);
+              }
+          };
+      }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="src/codemirror/lib/codemirror.js "></script>
