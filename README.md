@@ -49,7 +49,7 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
 </br>
 
-## ✅ Initializing & excuting python-hitchhiker
+##  Initializing & excuting python-hitchhiker
 
 ```
 $ npm install
