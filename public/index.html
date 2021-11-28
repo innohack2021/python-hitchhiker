@@ -131,7 +131,7 @@
     </main>
 
     <div class="px-4">
-      <div class="row align-items-md-stretch">
+      <div class="row">
         <div class="col-md-6">
           <div class="p-4 bg-light border rounded-3 scrollable-menu" id="content" style="min-height: 35rem;">
             <script>
@@ -139,19 +139,20 @@
             </script>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 ">
           <div class="forincode border">
             <form action="">
-              <textarea id="editor" class="editor" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></textarea>
+              <textarea id="editor" class="editor"></textarea>
             </form>
           </div>
-          <div class="h-100 p-4 bg-light border rounded-3 outscroll">
+          <div class="mh-100 p-4 bg-light border rounded-3 outscroll" style="height: 10rem;">
             <p>this is for output</p>
           </div>
         </div>
       </div>
+
       <div class="row align-items-center py-4">
-        <div class="col-md-1 d-flex justify-content-start btn-group">
+        <div class="col-12 col-sm-12 col-md-1 justify-content-start btn-group">
           <button type="button" class="btn btn-secondary" onclick="leftBtnClick()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
             <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"></path>
@@ -163,11 +164,11 @@
             </svg>
           </button>
         </div>
-        <div class="col-md-10 d-flex justify-content-end ps-5">
+        <div class="col-12 col-sm-12 col-md-10 justify-content-end ps-5">
           <input type="range" value="" class="form-range" min="0" max="29" step="1" id="page" onchange="barMovement(this.value);">
           <script>setPage(sessionStorage.getItem('page'))</script>
         </div>
-        <div class="col-md-1 order-last text-end">
+        <div class="col-12 col-sm-12 col-md-1 order-last text-end">
           <button id="test" class="btn btn-primary">submit</button>
         </div>
       </div>
