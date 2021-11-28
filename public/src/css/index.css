@@ -46,6 +46,7 @@ button.btr-clr{
     background-color: #595959;
     border: 0;
     color:#d0d0d0;
+    font-family: 'GmarketSansMedium', sans-serif;
 }
 
 button:hover {
