@@ -8,11 +8,11 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
 #### Python-hichhiker focuses to...
 
-  * Serve as desktop app (windows, macOS and Linux) and web service
-  * Provide a boilerplate to manage user information based on Express
-  * Help developers to build a coding practice website
-  * Make learning programming languages easy for everyone
-  * Display the result of a code on your browser without any software tools
+    * Serve as desktop app (windows, macOS and Linux) and web service
+    * Provide a boilerplate to manage user information based on Express
+    * Help developers to build a coding practice website
+    * Make learning programming languages easy for everyone
+    * Display the result of a code on your browser without any software tools
 
 </br>
 
@@ -88,26 +88,26 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
 </br>
 
-    1. Copy `en.json` to target language. (e.g. `ko.json`)
-    2. Add language identifier to `supportLanguageCodes` in `backend-ai-webui.ts`.
-   e.g.
-   ```javascript
-     @property({type: Array}) supportLanguageCodes = ["en", "ko"];
-   ```
-    3. Add language information to `supportLanguages` in `backend-ai-usersettings-general-list.ts`.
+     1. Copy `en.json` to target language. (e.g. `ko.json`)
+     2. Add language identifier to `supportLanguageCodes` in `backend-ai-webui.ts`.
+    e.g.
+    ```javascript
+      @property({type: Array}) supportLanguageCodes = ["en", "ko"];
+    ```
+     3. Add language information to `supportLanguages` in `backend-ai-usersettings-general-list.ts`.
 
-   Note: DO NOT DELETE 'default' language. It is used for browser language.
+    Note: DO NOT DELETE 'default' language. It is used for browser language.
 
 
 
 
 ##  ✨ Code of conduct
 
-   View [Code of conduct](https://github.com/innohack2021/python-hitchhiker/blob/main/CODE_OF_CONDUCT.md) for community guidelines.
+    View [Code of conduct](https://github.com/innohack2021/python-hitchhiker/blob/main/CODE_OF_CONDUCT.md) for community guidelines.
 
 </br>
 
 
 ## ✨ License
 
-   Refer to [LICENSE file](https://github.com/innohack2021/python-hitchhiker/blob/main/LICENSE.md).
+    Refer to [LICENSE file](https://github.com/innohack2021/python-hitchhiker/blob/main/LICENSE.md).
