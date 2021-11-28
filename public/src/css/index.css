@@ -6,8 +6,9 @@
 
 .font-nanum-gothic
 {
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif !important;
 }
+
 
 .github-href
 {
