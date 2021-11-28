@@ -63,7 +63,7 @@ Install on your PC: [Quick start guidelines](https://docs.backend.ai/en/latest/i
 Or run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
 
 
-#### ✅ Initializing codemirror ( @jasong 코드 미러 셋팅관련 내용 적어주세요. )
+#### ✅ Initializing codemirror 
 
 Set on your code : [codemirror CDN](https://cdnjs.com/libraries/codemirror)
 
