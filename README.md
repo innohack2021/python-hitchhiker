@@ -15,6 +15,7 @@ Learn python easily: Python practice website (web/app) for end-users and develop
  * Display the result of a code on your browser without any software tools
 
 </br>
+
 ### User Features
  * Free membership
     * Sign up
@@ -27,6 +28,7 @@ Learn python easily: Python practice website (web/app) for end-users and develop
     * Progress bar to check how much you have learned
  
 </br>
+
 ### Management Features
  * User management
     * User creation
