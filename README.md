@@ -1,10 +1,10 @@
-# PYTHON HITCHHIKER
+# 🚀PYTHON HITCHHIKER🚀
 
 Learn python easily: Python practice website (web/app) for end-users and developers.
 
 </br>
 
-## Role
+## 📌Role
 
 Python-hichhiker focuses to...
 
@@ -16,7 +16,7 @@ Python-hichhiker focuses to...
 
 </br>
 
-## User Features
+## 📌User Features
  * Free membership
     * Sign up
     * Sign in
@@ -29,7 +29,7 @@ Python-hichhiker focuses to...
  
 </br>
 
-## Management Features
+## 📌Management Features
  * User management
     * User creation
     * User deletion
@@ -42,14 +42,14 @@ Python-hichhiker focuses to...
 </br>
 
 
-## Setup Guide
+# 💡Setup Guide
 
 Python-hitchhiker Web UI is built with
  * `npm` as package manager
 
 </br>
 
-## Initializing & excuting python-hitchhiker
+## ✅ Initializing & excuting python-hitchhiker
 
 ```
 $ npm install
@@ -60,14 +60,14 @@ $ npm run start
 ```
 </br>
 
-## Developing and testing without bundling
+### Developing and testing without bundling
 
 ```
 $ npm run dev
 ```
 </br>
 
-## Initializing backend.ai 
+## ✅ Initializing backend.ai 
 
 Install on your PC: [Quick start guidelines](https://docs.backend.ai/en/latest/install/guides.html)
 
@@ -75,7 +75,7 @@ Or run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
 
 </br>
 
-## Initializing codemirror ( @jasong 코드 미러 셋팅관련 내용 적어주세요. )
+## ✅ Initializing codemirror ( @jasong 코드 미러 셋팅관련 내용 적어주세요. )
 
 </br>
 
@@ -87,18 +87,8 @@ Or run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
 </br>
 
 
-## Code of conduct
 
-View [Code of conduct](https://github.com/innohack2021/python-hitchhiker/blob/main/CODE_OF_CONDUCT.md) for community guidelines.
-
-
-</br>
-
-
-
-
-
-## Adding new examples (@sunghwki @sikang 원래 백엔드닷에이아이에서 언어 추가하는 파트였는데, 문제 추가하는 방법으로 바꿔주세요.)
+## 💡Adding new examples (@sunghwki @sikang 원래 백엔드닷에이아이에서 언어 추가하는 파트였는데, 문제 추가하는 방법으로 바꿔주세요.)
 
 
  1. Copy `en.json` to target language. (e.g. `ko.json`)
@@ -113,6 +103,16 @@ Note: DO NOT DELETE 'default' language. It is used for browser language.
 
 </br>
 
-### License
+
+##  ✨Code of conduct✨
+
+View [Code of conduct](https://github.com/innohack2021/python-hitchhiker/blob/main/CODE_OF_CONDUCT.md) for community guidelines.
+
+
+</br>
+
+
+
+### ✨License✨
 
 Refer to [LICENSE file](https://github.com/innohack2021/python-hitchhiker/blob/main/LICENSE.md).
