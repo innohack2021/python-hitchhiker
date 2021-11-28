@@ -104,26 +104,9 @@ async function sampleCode() {
   }
 }
 
-// function sampleCode2() {
-//     fetch(`${SERVER}/content/code/010`)
-//     .then(function(response) {
-//     return response.json();
-//     })
-//     .then(function(myJson) {
-//     console.log(myJson);
-//     console.log(JSON.stringify(myJson.content));
-//     return (JSON.stringify(myJson.content));
-//   });
-// }
-
 window.onload = async function () {
   let el = $("#editor");
-  // var version = "# version: Python3\n\n";
   let codeAreaTip = await sampleCode();
-  // var codeStart = "# code start\n\n";
-  // var codeEnd = "# code end\n\n";
-  // var codeTip = "'''\nThis function is the entry of this program and\nit must be return your answer of current question.\n'''\n";
-  // var code = "def solution():\n\tpass";
   let initValue = codeAreaTip;
   let myCodeMirror = CodeMirror.fromTextArea(el, {
     mode: "python", // Language mode
@@ -150,15 +133,4 @@ window.onload = async function () {
   myCodeMirror.setOption("value", initValue);
   // Editor key listening
   myCodeMirror.setSize("", "25rem");
-  let test = $("#test");
-  test.onclick = function () {
-    let value = myCodeMirror.getValue();
-    axios
-      .post("http://localhost/api/runcode", {
-        code: value,
-      })
-      .then(function (res) {
-        console.log(res);
-      });
-  };
 };
