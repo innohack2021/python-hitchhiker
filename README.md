@@ -49,11 +49,6 @@ Python-hichhiker focuses to...
 
 ### Configuration
 
-#Backend.AI local set (https://github.com/lablup/backend.ai/tree/main/scripts)
-```
-bash install-dev.sh
-```
-
 Web UI uses `config.toml` located in app root directory. You can prepare many `config.toml.[POSTFIX]` in `configs` directory to switch various configurations.
 
 These are options in `config.toml`.
