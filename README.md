@@ -58,7 +58,6 @@ $ npm install
 ```
 $ npm run start
 ```
-</br>
 
 ### Developing and testing without bundling
 
