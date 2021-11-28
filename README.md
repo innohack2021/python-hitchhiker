@@ -16,7 +16,7 @@ Python-hichhiker focuses to...
 
 </br>
 
-## 📌User Features
+### User Features
  * Free membership
     * Sign up
     * Sign in
@@ -29,7 +29,7 @@ Python-hichhiker focuses to...
  
 </br>
 
-## 📌Management Features
+### Management Features
  * User management
     * User creation
     * User deletion
