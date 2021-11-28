@@ -58,14 +58,14 @@ $ npm run start
 
 #### ✅ Initializing backend.ai 
 
-Install on your PC: [Quick start guidelines](https://docs.backend.ai/en/latest/install/guides.html)
+ * Install on your PC: [Quick start guidelines](https://docs.backend.ai/en/latest/install/guides.html)
 
-Or run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
+ * Run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
 
 
 #### ✅ Initializing codemirror 
 
-Set on your code : [codemirror CDN](https://cdnjs.com/libraries/codemirror)
+ * Set on your code : [codemirror CDN](https://cdnjs.com/libraries/codemirror)
 
 #### Branches
 
