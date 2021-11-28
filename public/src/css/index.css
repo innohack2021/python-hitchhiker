@@ -16,6 +16,9 @@
 	text-decoration: none;
 }
 
+.center{
+    text-align: center;
+}
 
 div.bottom-bar {
     position: relative;
@@ -34,6 +37,8 @@ div.outscroll{
     max-height: 10rem;
     overflow-x: hidden;
 }
+
+
 
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #signinfail {
