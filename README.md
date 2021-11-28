@@ -46,7 +46,6 @@ Learn python easily: Python practice website (web/app) for end-users and develop
     * `npm` as package manager
 
 
-</br>
 
 #### ✅ Initializing & excuting python-hitchhiker
 
