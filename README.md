@@ -1,10 +1,10 @@
-# 🚀PYTHON HITCHHIKER🚀
+# 🚀 PYTHON HITCHHIKER 🚀
 
 Learn python easily: Python practice website (web/app) for end-users and developers.
 
 </br>
 
-## 📌Role
+## 📌 Role
 
 Python-hichhiker focuses to...
 
@@ -42,7 +42,7 @@ Python-hichhiker focuses to...
 </br>
 
 
-# 💡Setup Guide
+# 💡 Setup Guide
 
 Python-hitchhiker Web UI is built with
  * `npm` as package manager
@@ -88,7 +88,7 @@ Or run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
 
 
 
-## 💡Adding new examples (@sunghwki @sikang 원래 백엔드닷에이아이에서 언어 추가하는 파트였는데, 문제 추가하는 방법으로 바꿔주세요.)
+## 💡 Adding new examples (@sunghwki @sikang 원래 백엔드닷에이아이에서 언어 추가하는 파트였는데, 문제 추가하는 방법으로 바꿔주세요.)
 
 
  1. Copy `en.json` to target language. (e.g. `ko.json`)
@@ -104,7 +104,7 @@ Note: DO NOT DELETE 'default' language. It is used for browser language.
 </br>
 
 
-##  ✨Code of conduct✨
+##  ✨ Code of conduct ✨
 
 View [Code of conduct](https://github.com/innohack2021/python-hitchhiker/blob/main/CODE_OF_CONDUCT.md) for community guidelines.
 
@@ -113,6 +113,6 @@ View [Code of conduct](https://github.com/innohack2021/python-hitchhiker/blob/ma
 
 
 
-### ✨License✨
+### ✨ License ✨
 
 Refer to [LICENSE file](https://github.com/innohack2021/python-hitchhiker/blob/main/LICENSE.md).
