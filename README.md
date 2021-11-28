@@ -39,7 +39,7 @@ Learn python easily: Python practice website (web/app) for end-users and develop
     * Delegate login to web server
     * Support userid / password login
 
-</br>
+<br>
 
 
 # 💡 Setup Guide
@@ -49,7 +49,7 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
 </br>
 
-##  Initializing & excuting python-hitchhiker
+## ✅ Initializing & excuting python-hitchhiker
 
 ```
 $ npm install
@@ -86,6 +86,7 @@ Or run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
 
 ## 💡 Adding new examples (@sunghwki @sikang 원래 백엔드닷에이아이에서 언어 추가하는 파트였는데, 문제 추가하는 방법으로 바꿔주세요.)
 
+</br>
 </br>
 
  1. Copy `en.json` to target language. (e.g. `ko.json`)
