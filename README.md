@@ -40,6 +40,8 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
 ## 💡 Setup Guide
 
+
+
 #### Python-hitchhiker Web UI is built with
  * `npm` as package manager
 
@@ -49,14 +51,13 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
 ```shell
 $ npm install
-```
-
-```shell
+$ #It can occur errors, but don't worry. The command below will solve it!
+$ npm audit fix
 $ npm run start
 ```
 
 
-#### ✅ Initializing backend.ai 
+#### ✅ Initializing backend.AI
 
  * Install on your PC: [Quick start guidelines](https://docs.backend.ai/en/latest/install/guides.html)
 
@@ -78,11 +79,16 @@ $ npm run start
 $ npm run dev
 ```
 
-## 💡 Adding new examples
 
+## 🖌 Modifing examples and Adding new examples
 
-  1. Add quiz md file in `42seoul_hack2021_python_hichhiker/public/content/description`.
-  2. Add quiz example md file in `42seoul_hack2021_python_hichhiker/public/content/python_problem`.
+1. Go ```public/content``` folder.
+2. There are two folders there. ```description``` and ```python_problem```.
+3. ```description``` is an explanation for problem, ```python_problem``` is an problem.
+4. You can modify 000.md to 029.md.
+5. If you want to add new examples, you would add md file like ```030.md```.
+6. After add new examples, you must modify progress bar ```max``` value in ```public/index.html```.
+
 
 
 ##  ✨ Code of conduct
@@ -90,13 +96,13 @@ $ npm run dev
 View [Code of conduct](https://github.com/innohack2021/python-hitchhiker/blob/main/CODE_OF_CONDUCT.md) for community guidelines.
 
 
-## ✨ License
+## 🧾 License
 
 Refer to [LICENSE file](https://github.com/innohack2021/python-hitchhiker/blob/main/LICENSE.md).
 
 
 
-## Contributors ✨
+## 🤩 Contributors!
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
@@ -109,8 +115,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/swkim12345"><img src="https://user-images.githubusercontent.com/88143547/143767525-8e369e86-375b-498a-af2d-e52501601092.png" width="100px;" alt=""/><br /><sub><b>Sunghwan Kim</b></sub></a><br /><a href="https://github.com/swkim12345" title="Code">💻</a></td>
      <td align="center"><a href="https://github.com/jujinesy"><img src="https://user-images.githubusercontent.com/88143547/143767412-2948af4a-2b45-43b0-abad-a2d4d23b8521.png" width="100px;" alt=""/><br /><sub><b>Jujin Bae</b></sub></a><br /><a href="https://github.com/jujinesy" title="Code">💻</a></td>
      <td align="center"><a href="https://github.com/Yaminyam"><img src="https://user-images.githubusercontent.com/88143547/143767571-9173b376-ba4b-4dfb-8528-2f6048593620.png" width="100px;" alt=""/><br /><sub><b>Sion Kang</b></sub></a><br /><a href="https://github.com/Yaminyam" title="Code">💻</a></td>
-     <td align="center"><a href="https://github.com/ft-jasong"><img src="https://user-images.githubusercontent.com/88143547/143767547-13dd1ac2-76a1-4c96-831d-5427268e4cdc.png" width="100px;" alt=""/><br /><sub><b>Jaeryong Song
-</b></sub></a><br /><a href="https://github.com/ft-jasong" title="Code">💻</a></td>
+     <td align="center"><a href="https://github.com/ft-jasong"><img src="https://user-images.githubusercontent.com/88143547/143767547-13dd1ac2-76a1-4c96-831d-5427268e4cdc.png" width="100px;" alt=""/><br /><sub><b>Jaeryong Song</b></sub></a><br /><a href="https://github.com/ft-jasong" title="Code">💻</a></td>
      <td align="center"><a href="https://github.com/toy-k"><img src="https://user-images.githubusercontent.com/88143547/143767557-e2b80fb9-8eb1-4597-b6c2-72edb1fbcd5d.png" width="100px;" alt=""/><br /><sub><b>Jeonghwan Lee</b></sub></a><br /><a href="https://github.com/toy-k" title="Code">💻</a></td>
   </tr>
 </table>
