@@ -4,12 +4,6 @@
 	font-family: 'Lobster', cursive;
 }
 
-.font-nanum-gothic
-{
-    font-family: 'Nanum Gothic', sans-serif !important;
-}
-
-
 .github-href
 {
 	color:black;
@@ -20,10 +14,12 @@
     text-align: center;
 }
 
-header {
+.bk-clr{
     background-color: #595959;
-    transition: background-color .5s;
+}
 
+header {
+    transition: background-color .5s;
 }
 
 header:hover{
@@ -35,16 +31,16 @@ header:hover span
     color: #202020 !important;
 }
 
-button.button-color-hovering{
+button.btr-clr{
     background-color: #595959;
     border: 0;
     color:#d0d0d0;
 }
 
-div.bottom-bar {
-    position: relative;
-    bottom: 0px;
-    margin: auto;
+button:hover {
+    background-color: white !important;
+    color: #202020 !important;
+    transition: color background-color .5s;
 }
 
 div.scrollable-menu {
