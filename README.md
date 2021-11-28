@@ -64,7 +64,6 @@ $ npm run start
 ```
 $ npm run dev
 ```
-</br>
 
 ## ✅ Initializing backend.ai 
 
@@ -72,23 +71,21 @@ Install on your PC: [Quick start guidelines](https://docs.backend.ai/en/latest/i
 
 Or run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
 
-</br>
 
 ## ✅ Initializing codemirror ( @jasong 코드 미러 셋팅관련 내용 적어주세요. )
 
-</br>
 
 ## Branches
 
  * main : Development branch
  * release : Latest release branch   (우리 서비스 release branch 만들 것인가요?)
 
-</br>
 
 
 
 ## 💡 Adding new examples (@sunghwki @sikang 원래 백엔드닷에이아이에서 언어 추가하는 파트였는데, 문제 추가하는 방법으로 바꿔주세요.)
 
+</br>
 
  1. Copy `en.json` to target language. (e.g. `ko.json`)
  2. Add language identifier to `supportLanguageCodes` in `backend-ai-webui.ts`.
@@ -100,7 +97,7 @@ e.g.
 
 Note: DO NOT DELETE 'default' language. It is used for browser language.
 
-</br>
+
 
 
 ##  ✨ Code of conduct
