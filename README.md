@@ -66,9 +66,9 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
 ### ✅ Initializing backend.ai 
 
-   Install on your PC: [Quick start guidelines](https://docs.backend.ai/en/latest/install/guides.html)
+      Install on your PC: [Quick start guidelines](https://docs.backend.ai/en/latest/install/guides.html)
 
-   Or run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
+      Or run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
 
 
 ### ✅ Initializing codemirror ( @jasong 코드 미러 셋팅관련 내용 적어주세요. )
