@@ -213,25 +213,12 @@
         </div>
       </div>
     </footer>
-    <!-- delete after implement of sending api ending point on back-->
-    <div>
-      <h4>Login</h4>
-      <form>
-          API Endpoint: <br/>
-          <input type="text" id="api_endpoint" placeholder="http://pythonhitchhiker.42seoul.kr:8091" value="http://pythonhitchhiker.42seoul.kr:8091" /><br/>
-          API Key: <br/>
-          <input type="text" id="apikey" autocomplete="username" placeholder="API key" value="AKIAIOSFODNN7EXAMPLE" /><br/>
-          Secret Key: <br/>
-          <input type="password" id="secretkey" autocomplete="current-password" placeholder="Secret Key" value="wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY" /><br/><br/>
-          <input type="button" id="login_button" value="Login" />
-      </form>
-    </div>
-    <!-- DELETE UNTIL HERE-->
     <!-- get code from server -->
     <script type="module">
       // Can be changed according to your directory path.
       import "./src/js/backend.ai-client-es6.js";
-      document.querySelector("#login_button").addEventListener("click", login.bind(this));
+      // document.querySelector("#login_button").addEventListener("click", login.bind(this));
+      window.addEventListener("load", login.bind(this));
       document.querySelector("#runCode").addEventListener("click", execute.bind(this));
       let client;
       console.log(typeof client);
@@ -239,11 +226,10 @@
       export async function login() {
           // Create a client configuration object.
           let config = new ai.backend.ClientConfig(
-              document.querySelector("#apikey").value,
-              document.querySelector("#secretkey").value,
-              document.querySelector("#api_endpoint").value
+              "AKIAIOSFODNN7EXAMPLE",
+              "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+              "http://pythonhitchhiker.42seoul.kr:8091"
           );
-
           // Create a client object with configuration object.
           client = new ai.backend.Client(
               config,
@@ -275,8 +261,6 @@
                   await login();
               }
               let code = document.querySelector(".CodeMirror").CodeMirror.getValue();
-              console.log(code);
-              console.log(typeof(code));
               let resources = {"cpu": 1, 
                   "mem": "1g",
                   "mounts": [],
