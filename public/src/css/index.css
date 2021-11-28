@@ -20,10 +20,12 @@
     text-align: center;
 }
 
-header {
+.bk-clr{
     background-color: #595959;
-    transition: background-color .5s;
+}
 
+header {
+    transition: background-color .5s;
 }
 
 header:hover{
@@ -35,10 +37,16 @@ header:hover span
     color: #202020 !important;
 }
 
-button.button-color-hovering{
+button.btr-clr{
     background-color: #595959;
     border: 0;
     color:#d0d0d0;
+}
+
+button:hover {
+    background-color: white !important;
+    color: #202020 !important;
+    transition: color background-color .5s;
 }
 
 div.bottom-bar {
