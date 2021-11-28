@@ -117,7 +117,7 @@ Python-hitchhiker Web UI is built with
 
 ## Code of conduct
 
-View [Code of conduct](https://github.com/lablup/backend.ai-webui/blob/main/CODE_OF_CONDUCT.md) for community guidelines.
+View [Code of conduct](https://github.com/innohack2021/python-hitchhiker/blob/main/CODE_OF_CONDUCT.md) for community guidelines.
 
 
 </br>
@@ -125,7 +125,7 @@ View [Code of conduct](https://github.com/lablup/backend.ai-webui/blob/main/CODE
 ## Initializing python-hitchhiker
 
 ```
-$ npm i
+$ npm install
 ```
 
 ```
@@ -136,7 +136,7 @@ $ npm run start
 ## Developing and testing without bundling
 
 ```
-$ npm run dev # To run dev. web server
+$ npm run dev
 ```
 </br>
 
