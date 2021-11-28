@@ -40,6 +40,8 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
 ## 💡 Setup Guide
 
+
+
 #### Python-hitchhiker Web UI is built with
  * `npm` as package manager
 
@@ -49,14 +51,13 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
 ```shell
 $ npm install
-```
-
-```shell
+$ #It can occur errors, but don't worry. The command below will solve it!
+$ npm audit fix
 $ npm run start
 ```
 
 
-#### ✅ Initializing backend.ai 
+#### ✅ Initializing backend.AI
 
 Install on your PC: [Quick start guidelines](https://docs.backend.ai/en/latest/install/guides.html)
 
@@ -79,18 +80,14 @@ Or run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
 $ npm run dev
 ```
 
-## 💡 Adding new examples (@sunghwki @sikang 원래 백엔드닷에이아이에서 언어 추가하는 파트였는데, 문제 추가하는 방법으로 바꿔주세요.)
+## 🖌 Modifing examples and Adding new examples
 
-
-  1. Copy `en.json` to target language. (e.g. `ko.json`)
-  2. Add language identifier to `supportLanguageCodes` in `backend-ai-webui.ts`.
- e.g.
- ```javascript
-   @property({type: Array}) supportLanguageCodes = ["en", "ko"];
- ```
-  3. Add language information to `supportLanguages` in `backend-ai-usersettings-general-list.ts`.
-
- Note: DO NOT DELETE 'default' language. It is used for browser language.
+1. Go ```public/content``` folder.
+2. There are two folders there. ```description``` and ```python_problem```.
+3. ```description``` is an explanation for problem, ```python_problem``` is an problem.
+4. You can modify 000.md to 029.md.
+5. If you want to add new examples, you would add md file like ```030.md```.
+6. After add new examples, you must modify progress bar ```max``` value in ```public/index.html```.
 
 
 ##  ✨ Code of conduct
@@ -98,13 +95,13 @@ $ npm run dev
 View [Code of conduct](https://github.com/innohack2021/python-hitchhiker/blob/main/CODE_OF_CONDUCT.md) for community guidelines.
 
 
-## ✨ License
+## 🧾 License
 
 Refer to [LICENSE file](https://github.com/innohack2021/python-hitchhiker/blob/main/LICENSE.md).
 
 
 
-## Contributors ✨
+## 🤩 Contributors!
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
@@ -113,12 +110,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/S0YKIM"><img src="" width="100px;" alt=""/><br /><sub><b>Soyeon Kim</b></sub></a><br /><a href="https://github.com/S0YKIM" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/swkim12345"><img src="" width="100px;" alt=""/><br /><sub><b>Sunghwan Kim</b></sub></a><br /><a href="https://github.com/swkim12345" title="Code">💻</a></td>
+     <td align="center"><a href="https://github.com/S0YKIM"><img src="" width="100px;" alt=""/><br /><sub><b>Soyeon Kim</b></sub></a><br /><a href="https://github.com/S0YKIM" title="Code">💻 </a></td>
+     <td align="center"><a href="https://github.com/swkim12345"><img src="" width="100px;" alt=""/><br /><sub><b>Sunghwan Kim</b></sub></a><br /><a href="https://github.com/swkim12345" title="Code">💻 🐛</a></td>
      <td align="center"><a href="https://github.com/jujinesy"><img src="" width="100px;" alt=""/><br /><sub><b>Jujin Bae</b></sub></a><br /><a href="https://github.com/jujinesy" title="Code">💻</a></td>
      <td align="center"><a href="https://github.com/Yaminyam"><img src="" width="100px;" alt=""/><br /><sub><b>Sion Kang</b></sub></a><br /><a href="https://github.com/Yaminyam" title="Code">💻</a></td>
-     <td align="center"><a href="https://github.com/ft-jasong"><img src=" " width="100px;" alt=""/><br /><sub><b>Jaeryong Song
-</b></sub></a><br /><a href="https://github.com/ft-jasong" title="Code">💻</a></td>
+     <td align="center"><a href="https://github.com/ft-jasong"><img src=" " width="100px;" alt=""/><br /><sub><b>Jaeryong Song</b></sub></a><br /><a href="https://github.com/ft-jasong" title="Code">💻</a></td>
      <td align="center"><a href="https://github.com/toy-k"><img src="" width="100px;" alt=""/><br /><sub><b>Jeonghwan Lee</b></sub></a><br /><a href="https://github.com/toy-k" title="Code">💻</a></td>
   </tr>
 </table>
