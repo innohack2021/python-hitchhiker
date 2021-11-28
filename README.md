@@ -51,8 +51,7 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
 ```shell
 $ npm install
-$ #It can occur errors, but don't worry. The command below will solve it!
-$ npm audit fix
+$ npm audit fix #It can occur errors, but don't worry. The command below will solve it!
 $ npm run start
 ```
 
