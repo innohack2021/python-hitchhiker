@@ -109,13 +109,18 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/S0YKIM"><img src="" width="100px;" alt=""/><br /><sub><b>Sungwoo Park</b></sub></a><br /><a href="https://github.com/S0YKIM" title="Bug reports">🐛S0YKIM</a></td>
-    <td align="center"><a href="https://github.com/swkim12345"><img src="" width="100px;" alt=""/><br /><sub><b>Peer de Bakker</b></sub></a><br /><a href="https://github.com/swkim12345" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://www.linkedin.com/in/drelipe/"><img src="https://avatars.githubusercontent.com/u/9976038?v=4?s=100" width="100px;" alt=""/><br /><sub><b>David Rodríguez Elipe</b></sub></a><br /><a href="#ideas-d-r-e" title="Ideas, Planning, & Feedback">🤔</a></td>
-    <td align="center"><a href="http://olesgedz.github.io"><img src="https://avatars.githubusercontent.com/u/8808075?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Oles</b></sub></a><br /><a href="https://github.com/JaeSeoKim/badge42/issues?q=author%3Aolesgedz" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://jkctech.nl"><img src="https://avatars.githubusercontent.com/u/2072890?v=4?s=100" width="100px;" alt=""/><br /><sub><b>JKCTech</b></sub></a><br /><a href="https://github.com/JaeSeoKim/badge42/issues?q=author%3Ajkctech" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://github.com/aabajyan"><img src="https://avatars.githubusercontent.com/u/62068860?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Arsen Abajyan</b></sub></a><br /><a href="https://github.com/JaeSeoKim/badge42/commits?author=aabajyan" title="Code">💻</a> <a href="https://github.com/JaeSeoKim/badge42/issues?q=author%3Aaabajyan" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="https://github.com/leeoocca"><img src="https://avatars.githubusercontent.com/u/36135198?v=4?s=100" width="100px;" alt=""/><br /><sub><b>leeoocca</b></sub></a><br /><a href="https://github.com/JaeSeoKim/badge42/commits?author=leeoocca" title="Code">💻</a> <a href="https://github.com/JaeSeoKim/badge42/issues?q=author%3Aleeoocca" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/S0YKIM"><img src="" width="100px;" alt=""/><br /><sub><b>Soyeon Kim</b></sub></a><br /><a href="https://github.com/S0YKIM" title="Bug reports">🐛</a></td>
+     
+    <td align="center"><a href="https://github.com/swkim12345"><img src="" width="100px;" alt=""/><br /><sub><b>Sunghwan Kim</b></sub></a><br /><a href="https://github.com/swkim12345" title="Bug reports">🐛</a></td>
+    
+     <td align="center"><a href="https://github.com/Yaminyam"><img src="" width="100px;" alt=""/><br /><sub><b>Sion Kang</b></sub></a><br /><a href="https://github.com/Yaminyam" title="">🤔</a></td>
+    
+     <td align="center"><a href="https://github.com/ft-jasong"><img src=" " width="100px;" alt=""/><br /><sub><b>Jaeryong Song
+</b></sub></a><br /><a href="https://github.com/ft-jasong" title="Bug reports">🐛</a></td>
+    
+     <td align="center"><a href="https://github.com/jujinesy"><img src="" width="100px;" alt=""/><br /><sub><b>Jujin Bae</b></sub></a><br /><a href="https://github.com/jujinesy" title="">🐛</a></td>
+        
+     <td align="center"><a href="https://github.com/toy-k"><img src="" width="100px;" alt=""/><br /><sub><b>Jeonghwan Lee</b></sub></a><br /><a href="https://github.com/toy-k" title="Code">💻</a></td>
   </tr>
 </table>
 
