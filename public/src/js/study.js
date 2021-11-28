@@ -84,7 +84,7 @@ function example() {
     .then((json) => {
       let content = json.content;
       let code = json.code;
-      $('#content').innerHTML = '<font face="font-nanum-gothic">' + marked.parse(content) + "</font>";
+      $('#content').innerHTML = marked.parse(content);
       // Apply content / code to the HTML area
     });
 }
