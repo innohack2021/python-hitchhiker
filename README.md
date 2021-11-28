@@ -71,8 +71,8 @@ Or run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
 #### Branches
 
  * main : Development branch
- * release : Latest release branch   (우리 서비스 release branch 만들 것인가요?)
-
+ * release : Latest release branch  
+ 
 #### Developing and testing without bundling
 
 ```
