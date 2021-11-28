@@ -25,8 +25,8 @@ Learn python easily: Python practice website (web/app) for end-users and develop
        * Python code examples
        * Display the result of your python code
        * Progress bar to check how much you have learned
-   </br>
-
+   
+   
    #### Management Features
     * User management
        * User creation
@@ -37,8 +37,7 @@ Learn python easily: Python practice website (web/app) for end-users and develop
        * Delegate login to web server
        * Support userid / password login
 
-   <br>
-
+   <br><br>
 
 ## 💡 Setup Guide
 
@@ -81,13 +80,11 @@ Learn python easily: Python practice website (web/app) for end-users and develop
    $ npm run dev
    ```
 
-</br>
-</br>
+</br></br>
 
 
 ## 💡 Adding new examples (@sunghwki @sikang 원래 백엔드닷에이아이에서 언어 추가하는 파트였는데, 문제 추가하는 방법으로 바꿔주세요.)
 
-</br>
 
      1. Copy `en.json` to target language. (e.g. `ko.json`)
      2. Add language identifier to `supportLanguageCodes` in `backend-ai-webui.ts`.
@@ -109,6 +106,7 @@ Learn python easily: Python practice website (web/app) for end-users and develop
     View [Code of conduct](https://github.com/innohack2021/python-hitchhiker/blob/main/CODE_OF_CONDUCT.md) for community guidelines.
 
 </br>
+<br>
 
 
 ## ✨ License
