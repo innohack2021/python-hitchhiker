@@ -98,6 +98,8 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
     Note: DO NOT DELETE 'default' language. It is used for browser language.
 
+</br>
+</br>
 
 
 
@@ -105,7 +107,6 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
     View [Code of conduct](https://github.com/innohack2021/python-hitchhiker/blob/main/CODE_OF_CONDUCT.md) for community guidelines.
 
-</br>
 </br>
 
 
