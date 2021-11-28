@@ -47,6 +47,8 @@ Python-hichhiker focuses to...
 Python-hitchhiker Web UI is built with
  * `npm` as package manager
 
+</br>
+
 ## Initializing & excuting python-hitchhiker
 
 ```
