@@ -49,7 +49,8 @@ Python-hichhiker focuses to...
 
 ### Configuration
 
-(여기 하위 부분 어떻게 적으면 좋을까요?)
+(여기 하위 부분 어떻게 적으면 좋을지 아이디어 있으신분 적어주세요)
+
 Web UI uses `config.toml` located in app root directory. You can prepare many `config.toml.[POSTFIX]` in `configs` directory to switch various configurations.
 
 These are options in `config.toml`.
