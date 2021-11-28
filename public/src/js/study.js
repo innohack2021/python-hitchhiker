@@ -1,16 +1,11 @@
 'use strict';
 
-if (!sessionStorage.getItem("isLoggedIn")) {
-	sessionStorage.setItem("page", 0);
+if (!sessionStorage.getItem("page")) {
+  let progress = sessionStorage.getItem("progress");
+  sessionStorage.setItem("page", progress);
 }
 
-// if (!sessionStorage.getItem("page")) {
-//   let progress = sessionStorage.getItem("progress");
-//   sessionStorage.setItem("page", progress);
-// }
-
 let pageId = sessionStorage.getItem("page");
-
 
 window.addEventListener("load", function (e) {
   if (sessionStorage.getItem("isLoggedIn")) {
@@ -36,7 +31,12 @@ function barMovement(val) {
   pageId = val;
   location.reload();
   }
-  location.reload();
+  if (!sessionStorage.getItem("isLoggedIn") && Number(val) > 3) {
+    signupmodal.show();
+  }
+  else {
+    location.reload();
+  }
 }
 
 function leftBtnClick() {
@@ -48,7 +48,17 @@ function leftBtnClick() {
 
 
 function rightBtnClick() {
-  if (Number(pageId) < 29 && sessionStorage.getItem("isLoggedIn")) {
+  if (!sessionStorage.getItem("isLoggedIn")) {
+    if (sessionStorage.getItem("page") >= "3") {
+      signupmodal.show();
+    }
+    else {
+      sessionStorage.setItem("page", String(Number(pageId) + 1));
+      pageId = String(Number(pageId) + 1);
+      location.reload();
+    }
+  }
+  else if (Number(pageId) < 29 && sessionStorage.getItem("isLoggedIn")) {
     sessionStorage.setItem("page", String(Number(pageId) + 1));
     pageId = String(Number(pageId) + 1);
     if (Number(pageId) > Number(sessionStorage.getItem("progress"))) {
