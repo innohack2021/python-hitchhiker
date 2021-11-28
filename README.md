@@ -78,18 +78,11 @@ $ npm run start
 $ npm run dev
 ```
 
-## 💡 Adding new examples (@sunghwki @sikang 원래 백엔드닷에이아이에서 언어 추가하는 파트였는데, 문제 추가하는 방법으로 바꿔주세요.)
+## 💡 Adding new examples
 
 
-  1. Copy `en.json` to target language. (e.g. `ko.json`)
-  2. Add language identifier to `supportLanguageCodes` in `backend-ai-webui.ts`.
- e.g.
- ```javascript
-   @property({type: Array}) supportLanguageCodes = ["en", "ko"];
- ```
-  3. Add language information to `supportLanguages` in `backend-ai-usersettings-general-list.ts`.
-
- Note: DO NOT DELETE 'default' language. It is used for browser language.
+  1. Add quiz md file in `42seoul_hack2021_python_hichhiker/public/content/description`.
+  2. Add quiz example md file in `42seoul_hack2021_python_hichhiker/public/content/python_problem`.
 
 
 ##  ✨ Code of conduct
