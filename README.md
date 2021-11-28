@@ -41,14 +41,14 @@ Learn python easily: Python practice website (web/app) for end-users and develop
    <br>
 
 
-# 💡 Setup Guide
+## 💡 Setup Guide
 
-### Python-hitchhiker Web UI is built with
+#### Python-hitchhiker Web UI is built with
     * `npm` as package manager
 
 </br>
 
-## ✅ Initializing & excuting python-hitchhiker
+### ✅ Initializing & excuting python-hitchhiker
 
    ```
    $ npm install
@@ -58,23 +58,23 @@ Learn python easily: Python practice website (web/app) for end-users and develop
    $ npm run start
    ```
 
-### Developing and testing without bundling
+#### Developing and testing without bundling
 
    ```
    $ npm run dev
    ```
 
-## ✅ Initializing backend.ai 
+### ✅ Initializing backend.ai 
 
    Install on your PC: [Quick start guidelines](https://docs.backend.ai/en/latest/install/guides.html)
 
    Or run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
 
 
-## ✅ Initializing codemirror ( @jasong 코드 미러 셋팅관련 내용 적어주세요. )
+### ✅ Initializing codemirror ( @jasong 코드 미러 셋팅관련 내용 적어주세요. )
 
 
-## Branches
+### Branches
 
     * main : Development branch
     * release : Latest release branch   (우리 서비스 release branch 만들 것인가요?)
