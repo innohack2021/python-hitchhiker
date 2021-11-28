@@ -20,6 +20,27 @@
     text-align: center;
 }
 
+header {
+    background-color: #595959;
+    transition: background-color .5s;
+
+}
+
+header:hover{
+    background-color: white;
+}
+
+header:hover span
+{
+    color: #202020 !important;
+}
+
+button.button-color-hovering{
+    background-color: #595959;
+    border: 0;
+    color:#d0d0d0;
+}
+
 div.bottom-bar {
     position: relative;
     bottom: 0px;
@@ -39,7 +60,6 @@ div.outscroll{
 }
 
 
-
 /* The snackbar - position it at the bottom and in the middle of the screen */
 #signinfail {
     visibility: hidden; /* Hidden by default. Visible on click */
@@ -51,9 +71,10 @@ div.outscroll{
     border-radius: 2px; /* Rounded borders */
     padding: 16px; /* Padding */
     position: fixed; /* Sit on top of the screen */
-    z-index: 1; /* Add a z-index if needed */
+    z-index: 10000 !important; /* Add a z-index if needed */
     left: 50%; /* Center the snackbar */
-    bottom: 30px; /* 30px from the bottom */
+    top: 30px; /* 30px from the bottom */
+
   }
 
 #signupsuccess {
@@ -66,9 +87,9 @@ div.outscroll{
     border-radius: 2px; /* Rounded borders */
     padding: 16px; /* Padding */
     position: fixed; /* Sit on top of the screen */
-    z-index: 1; /* Add a z-index if needed */
+    z-index: 10000 !important; /* Add a z-index if needed */
     left: 50%; /* Center the snackbar */
-    bottom: 30px; /* 30px from the bottom */
+    top: 30px; /* 30px from the bottom */
 }
 
   /* Show the snackbar when clicking on a button (class added with JavaScript) */
@@ -82,21 +103,21 @@ div.outscroll{
 
 /* Animations to fade the snackbar in and out */
 @-webkit-keyframes fadein {
-from {bottom: 0; opacity: 0;}
-to {bottom: 30px; opacity: 1;}
+from {top: 0; opacity: 0;}
+to {top: 30px; opacity: 1;}
 }
 
 @keyframes fadein {
-from {bottom: 0; opacity: 0;}
-to {bottom: 30px; opacity: 1;}
+from {top: 0; opacity: 0;}
+to {top: 30px; opacity: 1;}
 }
 
 @-webkit-keyframes fadeout {
-from {bottom: 30px; opacity: 1;}
-to {bottom: 0; opacity: 0;}
+from {top: 30px; opacity: 1;}
+to {top: 0; opacity: 0;}
 }
 
 @keyframes fadeout {
-from {bottom: 30px; opacity: 1;}
-to {bottom: 0; opacity: 0;}
+from {top: 30px; opacity: 1;}
+to {top: 0; opacity: 0;}
 }

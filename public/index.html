@@ -42,20 +42,20 @@
 
   <body>
     <main>
-      <header class="ms-3 mb-2 mt-2">
+      <header class="ps-3 pb-2 pt-2 hover">
         <div class="container-fluid">
           <div class="row">
             <div class="col-12 col-sm-8 col-md-7 col-lg-5 col-xl-6 col-xxl-4" id="sitename">
               <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <span class="fs-2 font-lobster">The Hitchhiker's Guide to Python</span>
+                <span class="fs-2 font-lobster" style="color:#d0d0d0;">The Hitchhiker's Guide to Python</span>
               </a>
             </div>
             <div class="col-md-1 col-lg-3 col-xl-3 col-xxl-6">
             </div>
 
             <!-- Sign up -->
-            <div class="col float-end">
-              <button type="button" class="btn btn-outline-secondary float-end" data-bs-toggle="modal" data-bs-target="#modal-signup" id="signup" style="display: none ">Sign Up</button>
+            <div class="col float-end pt-2">
+              <button type="button" class="btn btn-secondary float-end button-color-hovering fw-bold" data-bs-toggle="modal" data-bs-target="#modal-signup" id="signup" style="display: none ">Sign Up</button>
               <div class="modal fade" id="modal-signup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -88,10 +88,10 @@
             </div>
 
             <!-- Sign in -->
-            <div class="col">
-              <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" id="signin" style="display: none">Sign In</button>
+            <div class="col pt-2">
+              <button type="button" class="btn btn-secondary button-color-hovering fw-bold" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" id="signin" style="display: none">Sign In</button>
                 <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                  <div class="modal-dialog">
+                  <div class="modal-dialog" id="modal-signin">
                     <div class="modal-content" >
                       <div class="modal-header">
                         <h5 class="modal-title fs-5 fw-bold" id="staticBackdropLabel2">Sign in</h5>
@@ -130,7 +130,7 @@
       </header>
     </main>
 
-    <div class="px-4">
+    <div class="px-4 py-4" style="background-color: #595959;">
       <div class="row">
         <div class="col-md-6">
           <div class="p-4 bg-light border rounded-3 scrollable-menu" id="content" style="min-height: 35rem;">
@@ -172,7 +172,7 @@
         </div>
       </div>
     </div>
-    <div id="signinfail" style="z-index:10000;">로그인 실패</div>
+    <div id="signinfail">로그인 실패</div>
     <div id="signupsuccess">회원 가입을 축하드립니다!</div>
 
     <!-- FOOTER -->
@@ -247,7 +247,7 @@
       export function errorAsString(e) {
           let result = '';
           for (let key in e) {
-              if (e.hasOwnProperty(key)) { 
+              if (e.hasOwnProperty(key)) {
               result = result + " " + key + "," + e[key] + "|";
               }
           }
