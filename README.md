@@ -109,7 +109,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/S0YKIM"><img src="" width="100px;" alt=""/><br /><sub><b>Sungwoo Park</b></sub></a><br /><a href="https://github.com/S0YKIM" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/S0YKIM"><img src="" width="100px;" alt=""/><br /><sub><b>Sungwoo Park</b></sub></a><br /><a href="https://github.com/S0YKIM" title="Bug reports">🐛S0YKIM</a></td>
     <td align="center"><a href="https://github.com/swkim12345"><img src="" width="100px;" alt=""/><br /><sub><b>Peer de Bakker</b></sub></a><br /><a href="https://github.com/swkim12345" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/drelipe/"><img src="https://avatars.githubusercontent.com/u/9976038?v=4?s=100" width="100px;" alt=""/><br /><sub><b>David Rodríguez Elipe</b></sub></a><br /><a href="#ideas-d-r-e" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="http://olesgedz.github.io"><img src="https://avatars.githubusercontent.com/u/8808075?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Oles</b></sub></a><br /><a href="https://github.com/JaeSeoKim/badge42/issues?q=author%3Aolesgedz" title="Bug reports">🐛</a></td>
