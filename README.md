@@ -14,7 +14,6 @@ Learn python easily: Python practice website (web/app) for end-users and develop
     * Make learning programming languages easy for everyone
     * Display the result of a code on your browser without any software tools
 
-</br>
 
 #### User Features
     * Free membership
@@ -73,6 +72,8 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
 ### ✅ Initializing codemirror ( @jasong 코드 미러 셋팅관련 내용 적어주세요. )
 
+         ㅁㅁㅁㅁㅁ
+         ㅁㅁㅁㅁㅁ
 
 ### Branches
 
