@@ -47,9 +47,14 @@ Python-hichhiker focuses to...
 ### Baked versions
 `python-hitchhiker` production version is served as `python-hitchhiker-webservice`. If you use `python-hitchhiker-webservice`, you are using latest stable release of `python-hitchhiker`.
 
-### Configuration ( @jasong 코드 미러 및 backend-ai 셋팅관련 내용 적어주세요.)
+### Configuration
 
-Backend.AI Web UI uses `config.toml` located in app root directory. You can prepare many `config.toml.[POSTFIX]` in `configs` directory to switch various configurations.
+#Backend.AI local set (https://github.com/lablup/backend.ai/tree/main/scripts)
+```
+bash install-dev.sh
+```
+
+Web UI uses `config.toml` located in app root directory. You can prepare many `config.toml.[POSTFIX]` in `configs` directory to switch various configurations.
 
 These are options in `config.toml`.
 
@@ -122,7 +127,7 @@ View [Code of conduct](https://github.com/innohack2021/python-hitchhiker/blob/ma
 
 </br>
 
-## Initializing python-hitchhiker
+## Initializing & excuting python-hitchhiker
 
 ```
 $ npm install
@@ -148,9 +153,11 @@ Or run on cloud: [Cloud backend.ai](https://cloud.backend.ai/)
 
 </br>
 
-@jeongwhl 원래 백엔드닷에이아이에서 언어 추가하는 파트였는데, 문제 추가하는 방법으로 바꿔주세요.
+## Initializing codemirror ( @jasong 코드 미러 셋팅관련 내용 적어주세요. )
 
-### Adding new examples
+
+### Adding new examples (@sunghwki @sikang 원래 백엔드닷에이아이에서 언어 추가하는 파트였는데, 문제 추가하는 방법으로 바꿔주세요.)
+
 
  1. Copy `en.json` to target language. (e.g. `ko.json`)
  2. Add language identifier to `supportLanguageCodes` in `backend-ai-webui.ts`.
