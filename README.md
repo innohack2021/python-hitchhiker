@@ -8,11 +8,11 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
 #### Python-hichhiker focuses to...
 
- * Serve as desktop app (windows, macOS and Linux) and web service
- * Provide a boilerplate to manage user information based on Express
- * Help developers to build a coding practice website
- * Make learning programming languages easy for everyone
- * Display the result of a code on your browser without any software tools
+ * Serve as desktop app (windows, macOS and Linux) and web service.
+ * Provide a boilerplate to manage user information based on Express.
+ * Help developers to build a coding practice website.
+ * Make learning programming languages easy for everyone.
+ * Display the result of a code on your browser without any software tools.
 
 
 #### User Features
@@ -81,12 +81,12 @@ $ npm run dev
 
 ## 🖌 Modifing examples and Adding new examples
 
-1. Go ```public/content``` folder.
-2. There are two folders there. ```description``` and ```python_problem```.
-3. ```description``` is an explanation for problem, ```python_problem``` is an problem.
-4. You can modify 000.md to 029.md.
-5. If you want to add new examples, you would add md file like ```030.md```.
-6. After add new examples, you must modify progress bar ```max``` value in ```public/index.html```.
+1. Go to ```public/content``` folder.
+2. There are two folders. which are ```description``` and ```python_problem```.
+3. ```description``` means an explanation for problem, and ```python_problem``` is a problem set.
+4. You can modify from 000.md to 029.md.
+5. If you want to add new examples, you can add markdown files such as ```030.md```.
+6. After adding new examples, you must modify the progress bar ```max``` value into ```public/index.html```.
 
 
 
@@ -103,7 +103,7 @@ Refer to [LICENSE file](https://github.com/innohack2021/python-hitchhiker/blob/m
 
 ## 🤩 Contributors!
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people :
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
