@@ -6,39 +6,39 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
 ## 📌 Role
 
-   #### Python-hichhiker focuses to...
+#### Python-hichhiker focuses to...
 
-       * Serve as desktop app (windows, macOS and Linux) and web service
-       * Provide a boilerplate to manage user information based on Express
-       * Help developers to build a coding practice website
-       * Make learning programming languages easy for everyone
-       * Display the result of a code on your browser without any software tools
+    * Serve as desktop app (windows, macOS and Linux) and web service
+    * Provide a boilerplate to manage user information based on Express
+    * Help developers to build a coding practice website
+    * Make learning programming languages easy for everyone
+    * Display the result of a code on your browser without any software tools
 
+</br>
+
+#### User Features
+    * Free membership
+       * Sign up
+       * Sign in
+       * Sign out
+
+    * Education
+       * Python code examples
+       * Display the result of your python code
+       * Progress bar to check how much you have learned
    </br>
 
-   #### User Features
-       * Free membership
-          * Sign up
-          * Sign in
-          * Sign out
+   #### Management Features
+    * User management
+       * User creation
+       * User deletion
+       * Key management
 
-       * Education
-          * Python code examples
-          * Display the result of your python code
-          * Progress bar to check how much you have learned
-      </br>
+    * Work with Web server
+       * Delegate login to web server
+       * Support userid / password login
 
-      #### Management Features
-       * User management
-          * User creation
-          * User deletion
-          * Key management
-
-       * Work with Web server
-          * Delegate login to web server
-          * Support userid / password login
-
-      <br>
+   <br>
 
 
 # 💡 Setup Guide
