@@ -20,6 +20,27 @@
     text-align: center;
 }
 
+header {
+    background-color: #595959;
+    transition: background-color .5s;
+
+}
+
+header:hover{
+    background-color: white;
+}
+
+header:hover span
+{
+    color: #202020 !important;
+}
+
+button.button-color-hovering{
+    background-color: #595959;
+    border: 0;
+    color:#d0d0d0;
+}
+
 div.bottom-bar {
     position: relative;
     bottom: 0px;
