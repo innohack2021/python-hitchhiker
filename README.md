@@ -29,7 +29,7 @@ Python-hichhiker focuses to...
  
 </br>
 
-# Management Features
+### Management Features
  * User management
     * User creation
     * User deletion
