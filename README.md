@@ -1,4 +1,4 @@
-# 🚀 PYTHON HITCHHIKER 🚀
+# 🚀 PYTHON HITCHHIKER
 
 Learn python easily: Python practice website (web/app) for end-users and developers.
 
@@ -104,7 +104,7 @@ Note: DO NOT DELETE 'default' language. It is used for browser language.
 </br>
 
 
-##  ✨ Code of conduct ✨
+##  ✨ Code of conduct
 
 View [Code of conduct](https://github.com/innohack2021/python-hitchhiker/blob/main/CODE_OF_CONDUCT.md) for community guidelines.
 
@@ -113,6 +113,6 @@ View [Code of conduct](https://github.com/innohack2021/python-hitchhiker/blob/ma
 
 
 
-### ✨ License ✨
+### ✨ License
 
 Refer to [LICENSE file](https://github.com/innohack2021/python-hitchhiker/blob/main/LICENSE.md).
