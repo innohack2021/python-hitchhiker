@@ -66,6 +66,7 @@ $ npm run start
 #### ✅ Initializing codemirror 
 
  * Set on your code : [codemirror CDN](https://cdnjs.com/libraries/codemirror)
+ * Or download codemirror : [codemirror](https://codemirror.net/)
 
 #### Branches
 
