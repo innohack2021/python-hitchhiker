@@ -45,16 +45,6 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 #### Python-hitchhiker Web UI is built with
     * `npm` as package manager
 
-#### Branches
-
-    * main : Development branch
-    * release : Latest release branch   (우리 서비스 release branch 만들 것인가요?)
-
-#### Developing and testing without bundling
-
-   ```
-   $ npm run dev
-   ```
 
 </br>
 
@@ -81,6 +71,16 @@ Learn python easily: Python practice website (web/app) for end-users and develop
          ㅁㅁㅁㅁㅁ
          ㅁㅁㅁㅁㅁ
 
+#### Branches
+
+    * main : Development branch
+    * release : Latest release branch   (우리 서비스 release branch 만들 것인가요?)
+
+#### Developing and testing without bundling
+
+   ```
+   $ npm run dev
+   ```
 
 </br>
 </br>
