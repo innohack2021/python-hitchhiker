@@ -6,7 +6,7 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
 ## 📌 Role
 
-Python-hichhiker focuses to...
+### Python-hichhiker focuses to...
 
  * Serve as desktop app (windows, macOS and Linux) and web service
  * Provide a boilerplate to manage user information based on Express
@@ -15,7 +15,6 @@ Python-hichhiker focuses to...
  * Display the result of a code on your browser without any software tools
 
 </br>
-
 ### User Features
  * Free membership
     * Sign up
@@ -28,7 +27,6 @@ Python-hichhiker focuses to...
     * Progress bar to check how much you have learned
  
 </br>
-
 ### Management Features
  * User management
     * User creation
