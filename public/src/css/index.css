@@ -4,12 +4,6 @@
 	font-family: 'Lobster', cursive;
 }
 
-.font-nanum-gothic
-{
-    font-family: 'Nanum Gothic', sans-serif !important;
-}
-
-
 .github-href
 {
 	color:black;
@@ -47,12 +41,6 @@ button:hover {
     background-color: white !important;
     color: #202020 !important;
     transition: color background-color .5s;
-}
-
-div.bottom-bar {
-    position: relative;
-    bottom: 0px;
-    margin: auto;
 }
 
 div.scrollable-menu {
