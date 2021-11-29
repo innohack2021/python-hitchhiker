@@ -1,6 +1,6 @@
 # 🚀 PYTHON HITCHHIKER
 
-Learn python easily: Python practice website (web/app) for end-users and developers.
+Learn python easily: python practice website (web/app) for end-users and developers.
 
 </br>
 
