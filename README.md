@@ -1,6 +1,6 @@
 # 🚀 PYTHON HITCHHIKER
 
-Learn python easily: python practice website (web/app) for end-users and developers.
+Build your website easily: python live coding cookbook software using Backend.AI
 
 </br>
 
