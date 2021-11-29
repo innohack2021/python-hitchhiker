@@ -1,7 +1,7 @@
 'use strict';
 
 if (!sessionStorage.getItem("page")) {
-  let progress = sessionStorage.getItem("progress");
+  let progress = 0;
   sessionStorage.setItem("page", progress);
 }
 
