@@ -1,6 +1,13 @@
 'use strict';
 
-if (!sessionStorage.getItem("page")) {
+function isEmpty(str){
+  if (str === undefined || str === "null" || str == null || str == "")
+    return true;
+  else
+    return false;
+}
+
+if (isEmpty(sessionStorage.getItem("page"))) {
   let progress = 0;
   sessionStorage.setItem("page", progress);
 }
