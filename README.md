@@ -8,8 +8,8 @@ Learn python easily: Python practice website (web/app) for end-users and develop
 
 #### Python-hichhiker focuses to...
 
- * Serve as desktop app (windows, macOS and Linux) and web service.
- * Provide a boilerplate to manage user information based on Express.
+ * Serve as web service (on Linux, macOS and Windows)
+ * Provide a boilerplate to manage user information based on [Express](https://expressjs.com).
  * Help developers to build a coding practice website.
  * Make learning programming languages easy for everyone.
  * Display the result of a code on your browser without any software tools.
