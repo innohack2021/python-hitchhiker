@@ -45,6 +45,8 @@ Build your website easily: python live coding cookbook software using Backend.AI
 #### Python-hitchhiker Web UI is built with
  * `npm` as package manager
 
+#### If you don't have a remote server yet...
+ * Change the value of the variable `SERVER` into `http://localhost:3000`
 
 
 #### ✅ Initializing & excuting python-hitchhiker
