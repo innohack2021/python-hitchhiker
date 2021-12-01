@@ -109,9 +109,9 @@ Refer to [LICENSE file](https://github.com/innohack2021/python-hitchhiker/blob/m
 
 
 
-## 🤩 Contributors!
+## 🤩 Contributors
 
-Thanks goes to these wonderful people :
+Thanks go to these wonderful people :
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
